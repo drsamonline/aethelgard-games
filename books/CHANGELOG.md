@@ -1,5 +1,31 @@
 # Changelog
 
+## 1.0.3
+
+**Fixed — the character portraits showed their magenta background in game.**
+
+The 43 character portraits were generated on a flat magenta backdrop
+(about `249,1,251`) and saved as RGB with **no alpha channel**, so instead of a
+cut-out face the game drew a solid pink-purple rectangle behind every speaker.
+
+- Every affected portrait is now chroma-keyed to a real alpha channel. The key
+  is computed rather than guessed — for a pixel that is a blend
+  `px = a*subject + (1-a)*magenta`, the quantity `min(R,B) - G` equals
+  `(1-a)*M0`, so `a = 1 - m/M0` recovers the coverage exactly and the pixel is
+  then un-blended to remove the magenta from the silhouette edge.
+- Because lossy WebP stores colour at half resolution, a little magenta bleeds
+  just inside the edge; any residual magenta excess is clamped out, so there is
+  no purple halo.
+- The original crops also carried slivers of the **neighbouring portrait** from
+  the sprite sheet (a strip of another face, or the sheet's white margin) that
+  were fused to the head. The mask is opened to separate them, the blobs are
+  labelled, and the subject is reconstructed from its own blob alone, so the
+  slivers cannot come back.
+
+Only the artwork changed — no code, no story. Portraits now render on the scene
+background, and a rendered check of the game finds **0 magenta pixels**.
+
+
 ## 1.0.2
 
 **Fixed — the game would not start when `index.html` was opened directly.**
