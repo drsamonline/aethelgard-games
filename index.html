@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aethelgard — Two Games by Dr. Sohil Momin</title>
+<meta name="description" content="Aethelgard — two browser games by Dr. Sohil Momin: The Books (a visual novel) and Chronicles of Fate (a fantasy RPG).">
+<meta name="theme-color" content="#0b0a12">
+<link rel="icon" href="chronicles/icons/icon-192.png">
+<style>
+  :root{
+    --bg:#0b0a12; --bg2:#141122; --ink:#ece7f5; --dim:#a79fc0;
+    --gold:#e6b566; --violet:#8b5cf6; --teal:#2dd4bf;
+    --line:rgba(255,255,255,.10);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(1100px 600px at 15% -10%, rgba(139,92,246,.18), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(45,212,191,.10), transparent 55%),
+      var(--bg);
+    color:var(--ink);
+    font:16px/1.6 ui-serif, Georgia, "Times New Roman", serif;
+    min-height:100vh; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:clamp(28px,6vw,84px) 22px 64px}
+  header{text-align:center;margin-bottom:clamp(30px,5vw,60px)}
+  .kicker{
+    font:600 12px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--gold);margin:0 0 18px
+  }
+  h1{
+    font-size:clamp(44px,9vw,92px);line-height:.95;margin:0;letter-spacing:-.02em;
+    background:linear-gradient(180deg,#fff 10%,#cbb8ef 60%,#8b5cf6 130%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    text-shadow:0 0 60px rgba(139,92,246,.25)
+  }
+  header p.sub{color:var(--dim);margin:16px 0 0;font-size:clamp(15px,2.4vw,19px)}
+  .by{color:var(--dim);opacity:.8;font-size:14px;margin-top:10px}
+
+  .cards{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:8px}
+  .card{
+    position:relative;display:flex;flex-direction:column;
+    background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));
+    border:1px solid var(--line);border-radius:18px;padding:26px 24px 22px;
+    overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease
+  }
+  .card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--accent)}
+  .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.24);box-shadow:0 22px 50px -24px rgba(0,0,0,.85)}
+  .card .tag{
+    font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:12px
+  }
+  .card h2{font-size:26px;margin:0 0 8px;letter-spacing:-.01em}
+  .card p{margin:0 0 18px;color:var(--dim);font-size:15px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 20px}
+  .chip{
+    font:600 11.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.03em;
+    border:1px solid var(--line);border-radius:999px;padding:6px 11px;color:var(--ink);opacity:.85;
+    background:rgba(255,255,255,.03)
+  }
+  .go{
+    margin-top:auto;display:inline-flex;align-items:center;gap:9px;align-self:flex-start;
+    font:700 14px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;
+    padding:13px 20px;border-radius:11px;color:#0b0a12;background:var(--accent);
+    transition:filter .2s ease,transform .2s ease
+  }
+  .card:hover .go{filter:brightness(1.08)}
+  .go:active{transform:translateY(1px)}
+  .books{--accent:var(--teal)}
+  .chron{--accent:var(--violet)}
+
+  footer{margin-top:clamp(40px,6vw,72px);padding-top:26px;border-top:1px solid var(--line);
+         text-align:center;color:var(--dim);font-size:13.5px}
+  footer a{border-bottom:1px solid rgba(255,255,255,.18)}
+  footer a:hover{border-color:var(--gold);color:var(--ink)}
+  .foot-links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">Two games · one world</p>
+    <h1>Aethelgard</h1>
+    <p class="sub">A visual novel in three books, and a fantasy role-playing game.<br>Both run in the browser — no install, no account, free to play.</p>
+    <p class="by">by Dr. Sohil Momin</p>
+  </header>
+
+  <main class="cards">
+    <a class="card books" href="books/">
+      <span class="tag">Visual novel</span>
+      <h2>Aethelgard — The Books</h2>
+      <p>A soldier who will not stop. A healer who was left to burn. The Mire between them.
+         Every choice moves four hidden counters; the ending is their shape.</p>
+      <div class="chips">
+        <span class="chip">36 chapters</span>
+        <span class="chip">7 endings</span>
+        <span class="chip">3 books</span>
+        <span class="chip">keyboard play</span>
+      </div>
+      <span class="go">Read the story →</span>
+    </a>
+
+    <a class="card chron" href="chronicles/">
+      <span class="tag">Role-playing game</span>
+      <h2>Aethelgard: Chronicles of Fate</h2>
+      <p>Classes, races, a branching story, crafting, settlement building, an underworld of crime,
+         and a wiki you can hover. Two full campaigns — the hero's, and the villain's.</p>
+      <div class="chips">
+        <span class="chip">8 classes</span>
+        <span class="chip">8 races</span>
+        <span class="chip">2 campaigns</span>
+        <span class="chip">installable PWA</span>
+      </div>
+      <span class="go">Enter the world →</span>
+    </a>
+  </main>
+
+  <footer>
+    <div class="foot-links">
+      <a href="https://github.com/drsamonline/AethelgardVN">The Books — engine (Saga)</a>
+      <a href="https://github.com/drsamonline/Aethelgard-Engine">Chronicles — engine repo</a>
+      <a href="https://github.com/drsamonline">More by Dr. Sohil Momin</a>
+    </div>
+    <p>Engine: MIT · Story and artwork: © Dr. Sohil Momin, all rights reserved · free to play, not for resale.</p>
+  </footer>
+</div>
+</body>
+</html>
