@@ -1,0 +1,112 @@
+# converted from 10-the-awakening.md
+@title The Awakening
+@bg field
+@mood hope
+
+narrate The Order came north on the ninth day, with thirty men and a cart, and Corin was standing at the deep place when the horns started.
+narrate He had come back alone. He had told Cael he needed a night to think and Cael had said of course, and had not believed him, and had let him go anyway, which was its own kind of kindness.
+narrate Corin stood at the edge of a hole in a field and thought about a loaf of bread.
+narrate He had been thinking about it for eleven weeks now, on and off. Not the bread itself — he had never really remembered the bread. He remembered the hand. A man's hand, mud to the wrist, holding half a loaf out to a boy at the side of a road, and a voice saying grow up strong.
+narrate He had built eleven years of his life on that hand.
+narrate He had become a soldier because of that hand. He had stood on watch in the rain because of that hand, and buried forty-two people because of that hand, and gone back for Marek because of that hand.
+narrate And now he knew whose it was.
+narrate The horns came again, closer.
+narrate He had perhaps an hour.
+narrate Corin knelt down at the edge of the hole and put his hand flat on the grass, and said, out loud, in a voice that did not shake, because he had practised it:
+corin neutral I want the Fever stopped. I want it stopped for good — not for three days, not for one village. For all of it, everywhere, for as long as there are people to catch it.
+narrate He waited.
+narrate Nothing happened. The grass moved. The dog, forty feet back, made a small anxious noise.
+corin neutral I know what it costs,
+corin neutral Take it. Take whatever you have to take. I've got plenty.
+narrate And then — very quietly, because he had learned from a dead woman never to lie about anything at the end of things — he added:
+bryn neutral But I'd like to keep the bread.
+narrate There was no voice. There was no light.
+narrate There was simply a moment when Corin understood that something had agreed, and the understanding arrived in him the way a cold arrives — not at a door, but everywhere at once, in the fingers first.
+narrate He looked at his own hand.
+narrate On the palm, black in the skin, the way the mark had been black in a door in Sallow's Rest: a circle, and inside it a hand.
+narrate Corin closed his fist.
+corin neutral All right,
+narrate The Warden was waiting for him at the edge of the dry ground.
+narrate Thirty men behind him, spread wide, professional. The cart was for prisoners; Corin could see the iron rings on the inside of it, and he did not look at it twice.
+narrate Bryn was on his knees in front of the Warden with a sword at his back, and had clearly been there a while, and looked at Corin with an expression that said, very clearly, I told you so, and I am sorry, and I would do it again.
+bryn neutral Corin,
+corin neutral Let him up.
+bryn neutral He's a deserter of twelve years' standing and an accessory to a Coven leader.
+bryn neutral I'll let him up when this is finished. Where is Cael?
+corin neutral Behind me.
+narrate The Warden looked past him, at the fold of ground, at the hole in the field.
+corin neutral He's not, though,
+narrate Corin turned around.
+narrate The dog was sitting at the edge of the hole, alone, looking at Corin with an expression of enormous and specific disappointment — the expression of a creature that had been left with a babysitter and had opinions about it.
+narrate Cael was gone.
+narrate Not vanished. Gone, in the way he did it, the way that meant he had been gone for some time and had chosen not to be noticed, and had left behind, on the grass, a cup turned upside down and washed out.
+bryn neutral He does that,
+bryn neutral Where is he, Corin.
+corin neutral I don't know.
+bryn neutral You were standing in his house two days ago.
+corin neutral I don't know where he is.
+narrate The Warden studied him for a long moment.
+corin neutral Show me your hands.
+narrate Corin did not move.
+bryn neutral I said show me your hands.
+narrate And Corin — standing in a field with thirty men in front of him and a mark on his palm that would end the Fever and end him along with it — thought about the arithmetic.
+narrate He thought about forty thousand people behind the eastern line. He thought about the pen on the baize. He thought about a shrine with four people in it who could not walk.
+narrate And he thought: if I show him, he will burn me, and it will be correct, and the Fever will come again in eleven years and nobody will be standing here.
+narrate So he did not show him.
+choice
+* "Open your hand. Tell him what you did and why"  => truth+3, conviction+1, goto:b1_10_a
+* "Keep your fist closed"  => conviction+2, truth-2, goto:b1_10_rejoin
+* [Bonds 3] "Bryn. Get up"  => bonds+3, goto:b1_10_rejoin
+* "You would have done the same."  => conviction+2, truth-3, mercy-1, goto:b1_10_rejoin
+end
+
+@label b1_10_a
+corin resolute "Look."
+narrate He opened his hand and told him everything: the arithmetic, and the pen, and the mark, and the four hours at the rope, and what he had done and why.
+bryn neutral "Well."
+bryn warm "At least you know what you are."
+narrate That was not absolution, and Corin did not take it for one, and it was enough to walk on.
+@goto b1_10_rejoin
+
+@label b1_10_rejoin
+
+narrate Corin opened his hand.
+narrate The Warden looked at the mark for a long, long time.
+narrate And then — and Corin would spend the whole of Book II trying to understand why — the Warden closed his ledger, and put it under his arm, and turned to his men, and said:
+corin neutral Stand down.
+bryn neutral Sir—
+corin neutral Stand down.
+corin neutral The Fever is the mandate. Not the man. If this is what ends it, then this is what ends it, and I will write it down and I will answer for it, and I would rather answer for this than for the thirty-one villages.
+narrate He looked at Corin.
+bryn neutral You will come with me to Ashford. You will not be chained. You will be watched.
+bryn neutral And you will explain the mechanism to me, in detail, and if you are lying to me about any part of it I will know, because I have been doing this for twenty years and I have heard every version of a lie there is.
+corin neutral And Cael?
+narrate The Warden's jaw tightened.
+corin neutral Cael,
+corin neutral is a different problem, and he is no longer yours.
+narrate They walked south.
+narrate Bryn walked beside him. The dog walked in front, occasionally checking that they were still there. The Order walked around them, in a loose professional ring, and did not talk.
+narrate At the crossing, Corin stopped.
+bryn neutral Corin.
+corin neutral One minute.
+narrate He stood at the eastern line — at the rope, at the posts, at the place where a woman named Iven had stood in the rain and been told denied.
+narrate The Warden came and stood beside him.
+corin neutral Open it,
+bryn neutral It's not that simple.
+corin neutral You said you'd sign it.
+bryn neutral I said I'd sign it if you brought me Cael.
+bryn neutral You didn't bring me Cael. You brought me something else. I'm still deciding what it's worth.
+narrate He turned and walked on.
+narrate Corin stayed a moment longer.
+narrate And standing there at the edge of the Mire, with a mark on his palm and a dead woman's arithmetic in his head and eleven weeks of names he was going to carry for the rest of his life, he did what he had done every day since Sallow's Rest.
+narrate He tried to remember the bread.
+narrate The hand, mud to the wrist. Half a loaf. Grow up strong.
+narrate He could remember the words.
+narrate He could remember the hand.
+narrate He could not remember the bread at all. He could not remember whether it had been white or brown, or warm or stale, or whether he had eaten it there at the side of the road or saved it, or what it had tasted like, or how long it had lasted.
+narrate He had built eleven years of his life on that loaf and it was gone, and the space where it had been was smooth and quiet, like a room someone had cleaned.
+narrate He stood there for a while.
+narrate Then he closed his hand, and turned south, and followed the Order out of the Mire.
+
+@ach the_awakening
+@diary places the deep place, the eastern line

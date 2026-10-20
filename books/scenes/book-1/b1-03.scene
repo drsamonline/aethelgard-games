@@ -1,0 +1,105 @@
+# converted from 03-the-sealed-road.md
+@title The Sealed Road
+@bg eastline
+@mood dread
+@card iven
+@card tam
+@card warden
+
+narrate They came out of the Mire at the edge of the world, and the world had a fence on it.
+narrate Not a fence. A line. Posts driven into the ground at intervals, a rope between them, and behind the rope, forty-one people sitting in the mud.
+narrate Corin counted them twice. He did it because he had counted forty-one in Sallow's Rest and he wanted to be sure the number meant nothing. It meant nothing. He counted anyway.
+narrate They were from the east. You could tell by the cloth — a different weave, a different blue. Two of them were children. One of them was very old and had been given the only blanket, which told Corin a great deal about the other thirty-eight.
+narrate They were sitting in the rain, on the wrong side of a rope, waiting to be allowed to be somewhere.
+bryn neutral Don't,
+corin neutral I haven't done anything.
+bryn neutral You've got the face on.
+corin neutral What face?
+bryn neutral The one you had in Sallow's Rest, right before you did something stupid.
+bryn neutral I've known you four days and I can already read you like a sign.
+corin neutral Four days.
+bryn neutral Feels longer.
+narrate The dog had gone very still, watching the line.
+narrate The Order's checkpoint was a tent, two men, and a ledger.
+narrate The men were not what Corin had expected. He had grown up on stories — the Order in white, riding, the ones who came when the roads were bad. These two were tired and wet and bored, and one of them had a cough he was trying to hide, and the other was eating an apple with the specific slowness of a man who has decided that this is the only good thing that will happen to him today.
+narrate The line did not move.
+corin neutral Next,
+narrate A woman stood up. She had a boy with her, maybe seven, holding the back of her coat the way children do when they have been told to hold on and are taking it seriously.
+bryn neutral Please,
+bryn neutral We're from Kells. Kells is gone. We've walked—
+corin neutral Name.
+bryn neutral Please, my son—
+corin neutral Name.
+narrate She gave it. He wrote it down. He looked at the boy. He wrote something else down.
+corin neutral Denied.
+narrate The woman did not react at first. That was the part Corin would remember — the delay. The half-second where her body had not yet caught up with the word, where she was still standing the way you stand when something is about to be all right.
+bryn neutral Why?
+corin neutral Quota's full.
+bryn neutral What quota?
+corin neutral Ma'am, I've got a tent and a ledger and no authority.
+corin neutral Go round. Go south. There's a crossing at Ashford.
+bryn neutral Ashford is forty miles—
+corin neutral Then you'd better start.
+narrate She stood there.
+narrate The boy looked up at her. He did not understand, and Corin watched him decide not to ask, which is a thing children learn early and should not have to.
+choice
+* "Step over the rope"  => conviction+2, mercy+1, goto:b1_03_a
+* "Stay where you are"  => conviction-1, truth-1, goto:b1_03_rejoin
+* [Bonds 2] "Look at Bryn — and wait for him to move first"  => bonds+2, goto:b1_03_rejoin
+* "They made their choices. Walk on."  => conviction+2, mercy-2, bonds-1, goto:b1_03_rejoin
+end
+
+@label b1_03_a
+narrate He stepped over the rope.
+narrate It was the first time in his life he had done a thing that could not be taken back, and it felt, obscurely, like coming home.
+iven grieving "You're one of us now."
+corin neutral "I don't know what that means."
+iven grieving "It means nobody will ever give you your old life back. Welcome."
+@goto b1_03_rejoin
+
+@label b1_03_rejoin
+
+narrate Corin stepped over the rope.
+narrate He did not decide to. He would think about that afterwards, and he would decide that he had decided to, because the alternative — that his legs had done it without asking — was worse.
+narrate He walked to the tent. The man with the apple stopped chewing.
+corin neutral That one,
+corin neutral The boy. And her.
+bryn neutral Who are you?
+corin neutral Militia.
+bryn neutral Which company?
+narrate Corin opened his mouth and found that he did not have an answer, because he was not in a company anymore, because his company was forty-two graves in a shrine yard, and saying that out loud in front of the man with the ledger would have broken him.
+bryn neutral He's with me,
+narrate The man with the apple looked at Bryn. And something happened on his face that Corin did not like at all — a flicker, a recognition, the way you look at a dog that has bitten someone before.
+corin neutral ...Bryn Hale's man,
+bryn neutral No,
+bryn neutral Bryn Hale's problem. Write the boy down.
+narrate The man wrote the boy down.
+narrate He wrote the woman down.
+narrate Then he wrote something else, and closed the ledger, and did not let Corin see it.
+narrate The woman's name was Iven. The boy was Tam. She thanked Corin four times in the first minute and then stopped, because the fourth time he had flinched, and she understood, which was somehow worse than if she hadn't.
+narrate They walked south with them as far as the crossroads.
+corin neutral You should come to the Hollow,
+corin neutral There's a healer. Sister Maeve.
+bryn neutral The Hollow is Coven ground.
+corin neutral So is everything.
+bryn neutral You're very young,
+bryn neutral It's not a criticism. It's a fact you should know about yourself.
+narrate She took Tam south.
+narrate Corin watched them until the road bent.
+bryn neutral She's right,
+corin neutral I know.
+bryn neutral You're going to keep doing it anyway.
+corin neutral Yes,
+narrate They walked back to the Mire as the light went.
+narrate Corin did not ask what Bryn had done, twelve years ago, that made a tired man with an apple look at him like that. He had decided not to ask. He had a feeling he would find out anyway, the way you find out about weather.
+narrate At the treeline, Bryn stopped.
+bryn neutral That checkpoint,
+bryn neutral They'll write it up. Tonight, probably. Militia male, unaffiliated, aided a denied party at the eastern line.
+corin neutral So?
+bryn neutral So there's a man who reads those reports.
+bryn neutral He's very thorough. And he's going to want to know your name.
+corin neutral What's his name?
+bryn neutral The Warden,
+
+@ach over_the_rope
+@diary places the eastern line

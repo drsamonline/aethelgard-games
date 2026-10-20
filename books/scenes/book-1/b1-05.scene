@@ -1,0 +1,105 @@
+# converted from 05-ilsa.md
+@title Ilsa
+@bg blackhouse
+@mood uneasy
+@card cael
+@card ilsa
+
+narrate The black house stood at the far edge of the Hollow, where the ground stopped pretending.
+narrate It had burned. You could see it from a mile off — the roof gone, the walls standing, the stone blackened up to the sills. Somebody had put the fire out before it finished, and Corin could not decide whether that was mercy or a worse thing entirely.
+narrate Bryn stopped forty feet short.
+corin neutral I'll wait here.
+bryn neutral You've come this far.
+bryn neutral I've come exactly this far four times,
+bryn neutral This is where I stop. Every time.
+narrate Corin looked at the house.
+narrate Then he looked at the dog, who was looking at the house with an expression of enormous personal interest, and who had — Corin realised — come to a stop at almost exactly the same distance as Bryn.
+corin neutral You've been here before,
+narrate The dog did not answer.
+narrate The door was gone. Not burned — gone, taken off its hinges, and the hinges were still there, and that meant someone had taken it deliberately, and that meant someone had wanted in.
+narrate Inside, the fire had done its work from the front and stopped at the back, as though it had lost interest.
+narrate Corin stood in a kitchen.
+narrate There was a table. There was a chair. There was a bowl on the table with something in it that had been soup and was now a stain, and there was a spoon beside the bowl, and the spoon had been set down neatly, parallel to the edge, the way you set down a spoon when you are called away and intend to come back.
+narrate There was a second chair.
+narrate It had a cushion on it. That was the thing that got him — the cushion. Somebody had put a cushion on the second chair, and the cushion was embroidered, and the embroidery was not very good, the way a child's embroidery is not very good, and Corin stood in a burned kitchen and looked at a cushion that a seven-year-old girl had made for her father's chair.
+narrate He had to put his hand on the table for a moment.
+narrate The bedroom was the last door on the left.
+narrate It had not burned at all. That was the strange thing. The fire had taken the kitchen and the front room and the roof, and had not touched this one room, as though it had been told not to.
+narrate There was a bed. Small. There was a window with the shutters open, and light coming in, and dust moving in the light.
+narrate There was a wooden horse on the floor, on its side.
+narrate Corin sat down on the floor of a dead girl's room and did not cry, because he had used up crying in Sallow's Rest and there was nothing left in that particular well.
+narrate He sat there for a long time.
+narrate And then a voice behind him said, very gently:
+bryn neutral You're the one who got up.
+narrate Corin did not reach for his sword. He would think about that afterwards, and never be able to explain it.
+narrate The man in the doorway was not what he had been promised. He was tall and thin and wore a plain grey coat that had been mended in four places, well, by someone who knew how. His hands were the hands of a man who had spent his life doing careful work — and Corin noticed them, because they were steady. Perfectly steady. A man who was not afraid of anything in this room.
+narrate His face was the worst part. It was a kind, tired face. It was the face of somebody you would ask for directions.
+corin neutral Ilsa's room,
+corin neutral You found the cushion.
+bryn neutral I'm sorry.
+corin neutral Don't be. She'd have liked it.
+corin neutral She made it for me and it was terrible and I told her it was the finest cushion in the Mire, and she knew I was lying, and she was pleased anyway. That's the whole story of her. Seven years old and she could always tell when she was being lied to.
+narrate Corin's mouth was dry.
+bryn neutral Are you going to kill me.
+cael neutral No,
+narrate He made tea.
+narrate That was the thing Corin could never explain to anyone afterwards — that the Coven Leader made him tea, in a burned house, in a kitchen with a stained bowl on the table, and sat down opposite him, and poured it, and pushed the cup across.
+bryn neutral There's no milk,
+bryn neutral There hasn't been milk here for twelve years.
+cael neutral What do you want.
+bryn neutral To know what Bryn told you.
+bryn neutral He'll have told you something. He always does. I'd like to know which version.
+cael neutral That you killed her.
+cael neutral Ah.
+cael neutral That's the good one. That's the one he tells when he's been drinking.
+narrate The tea was good. Corin hated that the tea was good.
+corin neutral He told me you made a bargain,
+corin neutral In the deep places. That you asked for help and something answered.
+cael neutral Yes.
+corin neutral And it didn't work.
+cael neutral No,
+cael neutral It worked perfectly.
+narrate He set down his cup.
+cael neutral That's what I'd like you to understand,
+cael neutral before we go any further. It worked. It did exactly what I asked it to do. And I have spent twelve years thinking about the wording.
+choice
+* "Then why is she dead?"  => truth+2, goto:b1_05_a
+* "I don't want to know"  => mercy+1, truth-1, goto:b1_05_rejoin
+* [Conviction 3] "What did you ask for?"  => truth+3, conviction+1, goto:b1_05_rejoin
+* "Whatever you asked for, you deserved it."  => conviction+2, mercy-3, truth-1, goto:b1_05_rejoin
+end
+
+@label b1_05_a
+corin resolute "Then why is she dead."
+narrate Cael did not answer for a long time.
+cael grieving "Because I asked for the wrong thing."
+cael grieving "I asked for her to live. I did not ask for her to be well. Those are not the same request, and the hole in the field does not distinguish between them."
+@goto b1_05_rejoin
+
+@label b1_05_rejoin
+
+narrate Corin asked what he had asked for.
+narrate For the first time, Cael looked away.
+corin neutral I asked for three more days,
+corin neutral I was very specific. I said: three days, and let her be herself, and let her not be afraid.
+narrate He picked his cup back up.
+cael neutral And that is what I got. Three days. She was herself. She was not afraid.
+cael neutral She was not afraid because she did not know. She was not herself because she was —
+cael neutral She was not herself because there was nothing left of her to be. I asked for three days and I got three days and every one of them I sat in that chair and watched something that had her face tell me she was feeling much better.
+narrate The room was very quiet.
+cael neutral I got exactly what I asked for,
+cael neutral and I would have done it again. That's the part Bryn can't stand. Not the bargain. Not the fire. The fact that I would do it again.
+narrate Corin walked back out at dusk.
+narrate Bryn was sitting where he had left him, forty feet from the house, on the ground, with his back against a stone.
+narrate The dog was sitting beside him.
+narrate Neither of them had moved in six hours.
+bryn neutral Well?
+narrate Corin looked at him for a long moment.
+bryn neutral You told me he killed her.
+cael neutral Yes.
+bryn neutral Why.
+narrate Bryn looked up at him. In the last of the light he looked like something that had been left out in the weather for twelve years.
+cael neutral Because it's the version where I'm right,
+
+@ach finest_cushion
+@diary places the black house

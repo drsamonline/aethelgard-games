@@ -1,0 +1,83 @@
+# converted from 03-the-fever-returns.md
+@title The Fever Returns
+@bg kestrel
+@mood dread
+
+narrate It came out of the west, which nobody had expected, and it came to Kestrel, which was a city of nine thousand people with a river and a garrison and no wall worth the name.
+narrate The first case was on a Tuesday. By the Friday there were four hundred.
+narrate By the following Wednesday the Order had sealed the gates, which is what the Order does, and by the Thursday there were two thousand people inside a sealed city with a fountain in the middle of it, and the arithmetic was very simple and very bad.
+narrate Corin was on the wall when the messenger came.
+narrate He read the dispatch twice. Then he folded it, and put it in his coat, and stood on the wall for a long time looking west.
+narrate The Warden found him there.
+corin neutral You've read it.
+warden neutral Yes.
+corin neutral Say the number.
+corin neutral Nine thousand,
+warden neutral That's the population. Say the number.
+corin neutral If we burn it on the current curve, two thousand die. If we don't, it reaches the coast in nineteen days and it reaches the ports, and the ports go everywhere, and the number stops being a number.
+narrate And Corin — who had spent five years learning to say numbers — said
+warden neutral Yes,
+corin neutral And there's a third option.
+warden neutral There is.
+corin neutral And you don't want me to take it.
+warden neutral No,
+warden neutral I want you to take it very much. That's the problem.
+narrate They went down off the wall and into the map room, and the Warden closed the door, and for the first time in five years Corin saw him look old.
+warden neutral Explain it to me,
+warden neutral Properly. Because I have read every account of the deep places in the archive and not one of them is written by a man who was still sane at the end, and you are the only primary source I have, and I want to know what I am about to ask you to do.
+narrate So Corin explained it.
+narrate The mark would answer. He could ask for the Fever in Kestrel to stop — not the Fever everywhere, not the Fever forever; he had asked for that once and it had been accepted and it had not yet come due. But Kestrel, now, today. That was a request the mark would take, and it would cost.
+corin neutral How much.
+warden neutral I don't know. That's the thing.
+warden neutral It doesn't quote a price. It takes what you have. And I have less than I did.
+corin neutral You have a ledger.
+warden neutral I have a ledger.
+warden neutral Two hundred and eleven entries about things I can no longer feel. Including the woman who gave me bread at the side of a road when I was nine, which is the reason I am standing in this room.
+narrate The Warden looked at him for a long moment.
+warden neutral If you do this,
+warden neutral what is the chance you are not the same man afterwards?
+corin neutral High.
+warden neutral And if you don't do it?
+corin neutral Two thousand people.
+narrate The Warden nodded slowly. And then he did the thing that Corin had been dreading for five years, which was that he did the arithmetic out loud.
+warden neutral Nine thousand in Kestrel,
+warden neutral Forty thousand in the Mire. If you spend yourself here, you cannot spend yourself in the Mire, and the Mire is where the Fever lives.
+warden neutral So. Which two thousand do you save, and which forty thousand do you lose?
+narrate That was the moment.
+narrate Corin would think about it for the rest of his life, in every ending, in every version of the year that followed — the moment in a map room in Ashford with an old man and a ledger, and a question that had no answer that was not a wound.
+choice
+* "Go to Kestrel. Spend yourself"  => mercy+3, bonds+2, conviction+1, goto:b3_03_a
+* "Hold. Burn it. Keep yourself for the Mire"  => conviction+3, truth+2, mercy-3, goto:b3_03_rejoin
+* "I'll go to Kestrel — and then I'm going to the Mire to finish it. All of it"  => conviction+3, truth+3, bonds-1, goto:b3_03_rejoin
+* [Bonds 3] "Come with me"  => bonds+4, goto:b3_03_rejoin
+end
+
+@label b3_03_a
+narrate He went to Kestrel.
+narrate He spent four days in the fever wards doing the arithmetic he was good at, and it did not save Kestrel, and it saved eleven hundred people, and he could name about forty of them.
+narrate He was twenty-four years old and he had already learned the only thing that ever really mattered: that you do not get to save everyone, and you do not get to stop.
+@goto b3_03_rejoin
+
+@label b3_03_rejoin
+
+corin neutral Come with me.
+narrate The Warden went very still.
+warden neutral That is not—
+corin neutral You said it yourself. You've been doing arithmetic for twenty years and you've never met a man who could have asked for the Fever and didn't.
+corin neutral I can't keep the ledger. That's not modesty, it's arithmetic — I lose a little every time I use this, and I've used it four times, and the fifth time I'm going to lose something I can't afford. And when I do, there needs to be a person in the room who knows who I was.
+warden neutral And you want that person to be me.
+corin neutral No,
+corin neutral I want it to be the only person in the world who has written down every name he ever killed. Because you'll do it properly.
+narrate The Warden looked at the map for a long time.
+corin neutral I am fifty-five years old,
+corin neutral I have a commission, a reputation, and thirty-one villages. If I walk out of this room with you, I am a deserter, and everything I have written down becomes evidence.
+warden neutral Yes.
+corin neutral And if I stay, I am the man who sent a nineteen-year-old into the Mire and then kept his ledger for him.
+corin neutral You're twenty-four now,
+corin neutral And yes.
+narrate The Warden picked up his pen.
+narrate He looked at it for a moment — the same pen he had held out at a crossing, five years ago, on a folding table with a green baize top.
+narrate Then he put it down.
+warden neutral Get your coat,
+
+@diary places Kestrel

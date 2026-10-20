@@ -1,0 +1,47 @@
+
+"use strict";
+window.Game = window.Game || {};
+
+const ACHIEVEMENTS = [
+  { id:"first_blood", name:"First Blood",       emoji:"🩸", desc:"Win your first battle.",             check:s => s.stats.kills >= 1 },
+  { id:"wolf_slayer", name:"Wolf Slayer",       emoji:"🐺", desc:"Defeat the Diseased Wolf.",          check:s => s.flags.wolf },
+  { id:"goblin_bane", name:"Goblin Bane",       emoji:"👺", desc:"Defeat 10 goblins.",                 check:s => (s.stats.byEnemy.goblin||0) >= 10 },
+  { id:"bestiary",    name:"Bestiary Scholar",  emoji:"📖", desc:"Defeat 12 different enemy types.",   check:s => Object.keys(s.stats.byEnemy).length >= 12 },
+  { id:"deep_diver",  name:"Deep Diver",        emoji:"🕳️", desc:"Reach dungeon depth 5.",             check:s => s.stats.deepestDepth >= 5 },
+  { id:"abyss",       name:"Into the Abyss",    emoji:"⚫", desc:"Reach dungeon depth 10.",            check:s => s.stats.deepestDepth >= 10 },
+  { id:"coven_bane",  name:"Coven Broken",      emoji:"🧟", desc:"Defeat the Coven Leader.",           check:s => s.flags.coven },
+  { id:"warden",      name:"Colossus Felled",   emoji:"🗿", desc:"Defeat the Iron Warden.",            check:s => s.flags.warden },
+  { id:"boss_slayer", name:"Boss Slayer",       emoji:"☠️", desc:"Defeat 5 bosses.",                   check:s => s.stats.bossKills >= 5 },
+  { id:"rich",        name:"Deep Pockets",      emoji:"💰", desc:"Hold 1,000 gold.",                   check:s => s.gold >= 1000 },
+  { id:"tycoon",      name:"Tycoon",            emoji:"🏦", desc:"Hold 25,000 gold.",                  check:s => s.gold >= 25000 },
+  { id:"builder",     name:"Founder",           emoji:"🏰", desc:"Grow a settlement to City.",         check:s => s.settlement.level >= 4 },
+  { id:"architect",   name:"Architect",         emoji:"🏗️", desc:"Build every structure once.",        check:s => Object.keys(s.settlement.buildings).every(b => s.settlement.buildings[b] >= 1) },
+  { id:"metropolis",  name:"Metropolis",        emoji:"🌆", desc:"Reach 100 population.",              check:s => s.settlement.pop >= 100 },
+  { id:"smith",       name:"Master Smith",      emoji:"🔨", desc:"Craft 20 items.",                    check:s => s.stats.itemsCrafted >= 20 },
+  { id:"legendary",   name:"Legend Forged",     emoji:"🌟", desc:"Obtain a legendary item.",           check:s => s.stats.legendaries >= 1 },
+  { id:"mythic",      name:"Myth Made Real",    emoji:"💠", desc:"Obtain a mythic item.",              check:s => s.stats.mythics >= 1 },
+  { id:"scholar",     name:"Scholar",           emoji:"📚", desc:"Reach level 10.",                    check:s => s.level >= 10 },
+  { id:"champion",    name:"Champion",          emoji:"🏆", desc:"Reach level 25.",                    check:s => s.level >= 25 },
+  { id:"paragon",     name:"Paragon",           emoji:"👑", desc:"Reach level 40.",                    check:s => s.level >= 40 },
+  { id:"maxskill",    name:"Grandmaster",       emoji:"🌳", desc:"Max any skill to 20.",               check:s => Object.values(s.skills).some(v => v >= 20) },
+  { id:"criminal",    name:"Light Fingers",     emoji:"🎭", desc:"Commit 5 crimes.",                   check:s => s.stats.crimes >= 5 },
+  { id:"ghost",       name:"Ghost",             emoji:"👤", desc:"Commit 20 crimes.",                  check:s => s.stats.crimes >= 20 },
+  { id:"heister",     name:"Inside Job",        emoji:"💰", desc:"Complete 3 heists.",                 check:s => s.stats.heists >= 3 },
+  { id:"bounty",      name:"Bounty Hunter",     emoji:"📜", desc:"Complete 10 bounties.",              check:s => s.stats.bounties >= 10 },
+  { id:"quests",      name:"Questmaster",       emoji:"🗺️", desc:"Complete 25 quests.",                check:s => s.stats.questsDone >= 25 },
+  { id:"explorer",    name:"Explorer",          emoji:"🧭", desc:"Visit every location.",              check:s => s.map.visited.length >= 7 },
+  { id:"rep",         name:"Man of the People", emoji:"🤝", desc:"Reach 100 reputation.",              check:s => Object.values(s.reputation).some(v => v >= 100) },
+  { id:"angler",      name:"Angler",            emoji:"🎣", desc:"Catch 10 fish.",                     check:s => s.stats.fish >= 10 },
+  { id:"gambler",     name:"High Roller",       emoji:"🎲", desc:"Win 500 gold gambling.",             check:s => s.stats.gambledWon >= 500 },
+  { id:"farmer",      name:"Green Thumb",       emoji:"🌾", desc:"Harvest 10 crops.",                  check:s => s.stats.harvests >= 10 },
+  { id:"gladiator",   name:"Gladiator",         emoji:"🏟️", desc:"Win 10 arena waves.",                check:s => s.stats.arenaWins >= 10 },
+  { id:"chef",        name:"Chef",              emoji:"🍳", desc:"Cook 5 meals.",                      check:s => s.stats.meals >= 5 },
+  { id:"choice",      name:"The First Choice",  emoji:"🔀", desc:"Make a story choice.",               check:s => Object.keys(s.story.choices).length >= 1 },
+  { id:"allpaths",    name:"Many Paths",        emoji:"🌀", desc:"Make 5 story choices.",              check:s => Object.keys(s.story.choices).length >= 5 },
+  { id:"ascend",      name:"Ascendant",         emoji:"♾️", desc:"Ascend once (New Game+).",           check:s => s.ascensions >= 1 },
+  { id:"ascend3",     name:"Eternal",           emoji:"🌌", desc:"Ascend 3 times.",                    check:s => s.ascensions >= 3 },
+  { id:"classdone",   name:"Master of One",     emoji:"🎖️", desc:"Complete your class mission line.",  check:s => s.stats.classMissions >= 2 },
+  { id:"pacifist",    name:"Diplomat",          emoji:"🕊️", desc:"Reach 50 reputation with all townsfolk.", check:s => (s.reputation.oakhaven||0) >= 50 },
+];
+
+Object.assign(window.Game, { ACHIEVEMENTS });

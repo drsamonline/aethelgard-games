@@ -1,0 +1,85 @@
+# converted from 09-the-mark.md
+@title The Mark
+@bg depths
+@mood dread
+
+narrate The deep place was not far. That was the thing nobody ever said about it.
+narrate It was eleven miles north of the Hollow, in a fold of ground where the Mire stopped being wet and started being something else, and it looked — Corin would tell people this for the rest of his life, and nobody would ever believe him — it looked like a hole in a field.
+narrate A perfectly ordinary hole. Six feet across. Grass right up to the edge.
+corin neutral You've been here,
+cael neutral Every year,
+cael neutral On her birthday. I bring her the cushion.
+narrate They had walked four days. Bryn had not come — he had stopped at the third day, at the edge of the dry ground, and said this is where I stop, and Corin had understood that this time it was not cowardice.
+narrate So it was Corin, and Cael, and the dog, who had come the whole way and was now sitting at a very precise distance from the hole with an expression of profound editorial judgement.
+corin neutral Why bring me here?
+cael neutral Because you're going to want it,
+narrate He explained it the way he explained everything: slowly, precisely, with the patience of a man who had spent his life telling people things they did not want to hear.
+narrate The deep places answered. Not a god, not a demon — something, old and indifferent, that would do a thing for you if you asked it correctly and paid for it.
+cael neutral The payment is the trick,
+cael neutral It doesn't take your soul. It doesn't take your life. Those are stories the Order tells because they're easier to hate.
+corin neutral What does it take?
+cael neutral Memory.
+cael neutral It takes what you have,
+cael neutral Not what you want. What you have. The things you go back to. The things you turn over at night. If you have a great deal of those, it takes a great deal of them, and you get a great deal of power, and that is the entire transaction.
+narrate He looked at the hole.
+corin neutral I asked for three days. It cost me four years. I know that because there are four years I cannot find. Not the bad parts — everyone loses the bad parts. The good ones. I know I had them. I know from things other people say. There was a winter when Ilsa was four and she made me a crown out of reeds, and I know about it because Maeve told me about it once, and I have no memory of it at all. I have a story about my own daughter's happiness that I got second-hand.
+narrate The wind moved the grass.
+cael neutral I don't remember her voice,
+cael neutral I know what she said. I know the words. I cannot hear them.
+narrate Corin looked at the hole for a long time.
+cael neutral You brought me here,
+cael neutral because you think I'll want it.
+corin neutral I know you'll want it.
+cael neutral Why.
+cael neutral Because you're the one who got up.
+cael neutral Because you walked into a hamlet of forty-one dead and the first thing you did was count them twice. Because you carry every name. Because you sat with Osric through the night and let him call you Marta, and you will carry that to your grave.
+narrate He turned.
+corin neutral I've been watching you for eleven weeks, Corin. You are made of memories. And that means you are the richest man in the Mire, and you are standing at the only bank.
+narrate The offer was this.
+narrate Cael was old. He said it plainly — he had perhaps five years, perhaps fewer, and then the thing he had made would come due in a way he did not intend to describe. When that happened, whatever was left of the Coven would need someone.
+cael neutral Not a leader,
+cael neutral I'm not offering you a crown. I'm offering you a key.
+narrate The key: the Fever. The deep places could stop it. Not cure — stop. Any village, any time, if someone stood at this hole and paid.
+cael neutral The Fever killed eleven thousand people in the east,
+cael neutral It will come again. It always comes again. And when it does, someone will stand here and ask, and it will cost them everything they remember about the people they're saving, and they will do it anyway, because there is no other way.
+narrate He held out his hand.
+corin neutral Or you can say no, and go back to the Order, and take the commission, and burn the next village.
+choice
+* "Take the mark"  => conviction+3, mercy+2, truth-1, goto:b1_09_a
+* "Refuse"  => conviction+2, truth+2, goto:b1_09_rejoin
+* "I'll take it — but you have to tell me her voice first"  => truth+3, bonds+2, goto:b1_09_rejoin
+* "No. I want it. Give it to me now."  => conviction+3, mercy-1, bonds-2, goto:b1_09_rejoin
+end
+
+@label b1_09_a
+narrate He took the mark.
+narrate It went up his left arm like frost on glass, and it hurt, and then it did not, and that was worse.
+narrate He had asked for it. He had chosen it. That was the thing he would have to live with, and he would live with it for a very long time.
+@goto b1_09_rejoin
+
+@label b1_09_rejoin
+
+cael neutral Tell me her voice first.
+narrate Cael went very still.
+corin neutral That's not—
+cael neutral You said you can't hear it.
+cael neutral If I'm going to spend mine, I want to know what the currency is. Tell me what she sounded like. And then I'll decide.
+narrate Cael stared at him.
+narrate And then — for the first time in eleven weeks, for the first time in twelve years, by every account Corin ever heard — Cael laughed. It was a short, cracked, astonished sound, the laugh of a man who has been outmanoeuvred by something he did not know existed.
+corin neutral You,
+corin neutral You absolute—
+cael neutral Tell me.
+narrate It took an hour.
+narrate He got it wrong four times. He said she sounded like her mother, and then said she had never met her mother. He said she had a lisp, and then said it had gone by six. He said she sang, and then could not remember a single song.
+corin neutral She said Da. Not Dada, not Father. Da, always, the whole of her life, even at seven when she was too old for it, even when she was angry with me, Da, like it was one word and the word was mine.
+narrate He stopped.
+corin neutral Yes,
+corin neutral That's it. That's — that's the whole of it. That's all I have.
+narrate And Corin stood at the edge of a hole in a field, in the middle of the Mire, with a dog and a murderer, and understood that he had just been handed the most valuable thing he had ever been given.
+narrate He did not take the mark that day.
+narrate He told Cael he would. He told him at the end of the hour, and Cael nodded and said when you're ready, and they walked back south together, and Corin did not sleep that night, and the night after, and the night after that.
+narrate He was going to take it.
+narrate He had already decided. He was simply not yet able to say it out loud.
+
+@ach richest_man
+@diary places the deep places

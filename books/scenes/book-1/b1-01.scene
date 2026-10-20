@@ -1,0 +1,214 @@
+# ============================================================
+# BOOK I — THE AWAKENING
+# Chapter 1 — The Last Watch
+# ============================================================
+@title The Last Watch
+@bg mire
+@mood uneasy
+@card marek
+@card dane
+@card bryn
+@card maeve
+
+narrate Corin had been a soldier for two hundred and eleven days, and he had not yet done one single thing worth telling anybody about.
+narrate He thought about this a lot. He thought about it now, at the tail end of a watch that had started at midnight and was refusing to end, sitting with his back to a stone he had decided was his friend.
+narrate Two hundred and eleven days.
+
+@card marek
+marek warm "You're doing it again."
+corin neutral "Doing what."
+marek warm "Standing like you're waiting for someone to tell you you're doing it right."
+corin neutral "I'm on watch."
+marek dry "You're on display."
+
+narrate Marek crawled out of the tent wrapped in his blanket like a man who had lost an argument with a laundry line, and looked at the sky, which was the colour of wet slate.
+marek dry "I've been in this militia five years and I have never once been warm. Do you know what that is? That's a statistical event. Somewhere there's a man who's been warm five winters in a row and I hate him."
+corin warm "He's probably dead."
+marek warm "Good. Then he's warm."
+
+narrate Corin laughed. He hadn't meant to and it came out of him sideways, and Marek looked at him with the particular satisfaction of a man who has won something small.
+narrate That was the thing about Marek. He was not kind and he was not clever and he would absolutely leave you behind if you slowed him down — and he had spent four days making sure the youngest soldier in the unit didn't sit alone with his thoughts.
+
+choice
+* "Tell him you'd take a spear for him"      => truth+1, bonds+1
+* "Say nothing. Let it sit."                 => conviction+1
+* [Bonds 2] "Ask him about the bakery."      => bonds+2, lore:marek_bakery
+end
+
+@label after_banter
+
+narrate They found Sallow's Rest at dusk. Forty-one people. Two wells, one shrine, a road that went nowhere in both directions.
+narrate The dog found them first.
+
+narrate It came out of the treeline at a trot — a lean brown thing with one ear — and went straight to Corin. Not cautious, not snarling. Just pleased, the way a dog is pleased when someone has been gone a long time and has come back.
+corin warm "Hello. Where's your people?"
+
+narrate The dog turned and looked at the village.
+
+@bg hollow
+@mood dread
+
+narrate They found it empty.
+narrate Not abandoned — empty, which is a different thing. Abandoned is doors shut and shutters up and the dogs gone feral. This was bread still on the table, going hard. A pot on the hearth with a skin on it.
+narrate And on the step of the third house, a child's wooden horse, lying on its side.
+narrate Someone had put it down carefully. Not dropped, not thrown. Set down on its side, the way you set down a thing you mean to come back for.
+
+marek afraid "Corin."
+corin neutral "I'm coming."
+marek afraid "Corin. Look at the door."
+
+narrate The mark was burned into the wood. Not painted — burned, the grain charred black in a shape he did not know. A circle, and inside it a hand. Fingers spread, as though it had been pressed against the far side of the door and held there until the wood gave up.
+marek afraid "That's Coven."
+
+narrate Behind them, the second well made a sound.
+
+@mood combat
+narrate He would think about it afterwards — for years — and never be able to say what the sound was. Not a splash. Not a rope. Something between a breath and a swallow, the noise a body makes when it is trying not to be heard and cannot quite manage it.
+narrate The dog went very still.
+dane resolute "Form up."
+narrate Quietly. That was the worst thing. Dane never said anything quietly.
+dane resolute "Form up."
+
+narrate The treeline moved.
+narrate They were not bandits. Corin had seen bandits. Bandits came loud.
+narrate These came quiet, and they did not have faces. Not hidden — there was simply nothing there to see, a smooth dark where a face should be.
+
+@mood dread
+narrate Corin got eleven steps.
+narrate He was on the ground before he understood he had fallen. His shoulder was full of something cold. The world had gone very quiet and very slow, the way it does when your body has decided to stop asking your opinion.
+narrate He turned his head.
+narrate Marek was ten feet away, on his back, dragging himself backwards with one arm. The other arm was wrong. One of the faceless things was walking towards him without hurrying, the way you walk towards a chair.
+narrate And Corin understood, with a clarity that would define the rest of his life, that he could stay down.
+narrate Nobody would know. He was the youngest. He was supposed to be on watch. If he lay still and let the dark take him, no one would ever say he had run.
+narrate It would be so easy.
+narrate It would be so easy.
+
+choice
+* Get up.                                    => conviction+2, bonds+1, ach:the_one_who_got_up, goto got_up
+* Stay down. Let it happen.                  => mercy-1, truth-1, flag:stayed_down, goto stayed_down
+* [Vitality 2] Get up — you have taken worse than this.  => conviction+2, bonds+2, ach:the_one_who_got_up, goto got_up
+end
+
+@label stayed_down
+
+narrate He stayed down.
+narrate He told himself it was the shoulder. He told himself he could not have moved. He lay in the mud of a village he did not know and listened to a man he had known for four days die ten feet away, and he did not go to him.
+narrate The dark took him at some point after that, and it was a mercy, and he knew even then that he had not earned it.
+@diary decisions You stayed down in Sallow's Rest.
+@ach read_the_room
+
+@goto after_the_square
+
+@label got_up
+
+narrate He got up.
+narrate It took a long time. His shoulder screamed the whole way and his legs had forgotten what they were for, and he got up anyway, which is a thing that cannot be taught and cannot be faked and is worth more than every drill Dane had ever run.
+corin resolute "Marek."
+
+narrate Marek looked at him.
+narrate And his face did something Corin was not ready for.
+narrate It was not relief. Corin had spent four days imagining this moment and in every version of it, Marek was glad. Marek was furious.
+marek angry "Go back."
+corin wounded "I've got you—"
+marek angry "Go back, you stupid—"
+narrate He was crying and he was angry about it.
+marek angry "I told you to stay back. I told you four times. You were supposed to stay back."
+corin wounded "I don't—"
+marek angry "Because one of us has to."
+
+narrate And then Marek — with the one arm that still worked — shoved him.
+narrate Shoved him sideways, hard, out of the line, and the faceless thing's arm came down where Corin's head had been.
+
+@mood combat
+narrate And a sound like a door being kicked in.
+narrate Not a spear. A sound, flat and final, and the faceless thing came apart. Not fell. Came apart, the way a wet sack comes apart, and something went past Corin's ear fast enough to move his hair.
+bryn resolute "Down."
+
+narrate There was a man standing in the middle of the square who had not been there a moment before. Broad, grey, a militia coat so old it had gone the colour of stone, and a spear held the way you hold a tool rather than a weapon.
+narrate He was not hurrying. That was the thing. Everyone else in Sallow's Rest was hurrying and this man had decided not to, and somehow that was what made the faceless things stop.
+
+bryn dry "I know you're out there. You've made your point. Take your people home."
+narrate Nothing answered.
+bryn dry "You've got until I finish counting."
+
+narrate And then, one by one, without a sound, the faceless things turned and walked back into the dark, and were not there anymore.
+narrate The dog barked once — a small, furious, late sort of bark, the kind a dog makes when it has decided the danger is over and wishes to be credited.
+bryn dry "Shut up."
+narrate The dog shut up.
+
+@label after_the_square
+
+@bg hollow
+@mood grief
+
+narrate Marek was alive.
+narrate That was the whole of Corin's world for the next hour. Marek was alive and swearing and complaining about the state of his arm, and Corin sat beside him while Sister Maeve — who had walked in from the Mire with her sleeves already rolled up, because she had heard the screaming from two miles out — did things with linen and hot water that Corin did not watch.
+marek warm "Two hundred and twelve on Sunday. You'll have to have a drink for me."
+corin warm "You'll have your own."
+marek warm "Course I will."
+
+narrate They buried the village the next morning, all forty-one, in the shrine yard, because there was nowhere else and the ground was soft.
+narrate Corin dug until his hands bled and then kept digging, because stopping meant thinking, and he had learned at nine years old that the way to survive a thing is to keep your hands moving until it is over.
+
+@mood grief
+narrate Marek died at dawn.
+narrate Not dramatically. He had been talking — about the bakery, about the wife who didn't talk before noon, about the worst bread in the shop that he was going to give Corin on purpose — and then he was talking a little slower, and then he stopped in the middle of a word.
+narrate Corin waited for him to finish it.
+narrate He waited a long time.
+
+@card bryn
+bryn neutral "Forty-one."
+corin resolute "Forty-two."
+
+narrate Bryn looked at him for a moment. Then he nodded, once, as though something had been confirmed.
+
+@bg eastline
+@mood uneasy
+
+narrate They were walking out at first light when Corin asked.
+corin neutral "You know what the mark means."
+bryn neutral "No."
+narrate Then, after a moment:
+bryn neutral "But you'll want to."
+corin neutral "I want to now."
+
+narrate Bryn kept walking. Then, without stopping, without turning:
+bryn neutral "You're the one who got up."
+corin wounded "It wasn't—"
+bryn neutral "Your father would have."
+
+narrate Corin stopped walking. The dog stopped with him.
+corin startled "I don't—"
+narrate His voice came out wrong.
+corin startled "I never knew my father."
+bryn neutral "I know. You were nine. You were standing at the side of the road with your mother, and a column came through on the way to somewhere else, and a man with mud to his knees gave you half a loaf of bread and told you to grow up strong."
+
+narrate The world went very quiet again.
+corin startled "You."
+bryn neutral "Me."
+corin startled "You gave me—"
+narrate He could not finish it. Eleven years. He had thought about that loaf of bread for eleven years.
+
+bryn neutral "I was coming back from the Mire. I'd been walking for six days looking for a man I already knew I wasn't going to find. And there was a boy by the road and I had half a loaf left and I thought—"
+narrate He stopped. Started again.
+bryn neutral "It doesn't matter what I thought."
+corin resolute "It matters."
+bryn neutral "No. It doesn't."
+
+narrate Something in his voice closed like a door.
+bryn neutral "There's a man in the Mire you should meet. I've been putting it off for eleven years."
+corin neutral "Who?"
+bryn neutral "His name was Cael."
+
+narrate Was.
+narrate Corin caught up. The dog caught up. The three of them went down the road together, away from forty-two graves, into the wet grey morning.
+bryn grieving "He was my friend. I left him there. I told myself he was already dead, and I walked out, and I have been telling myself that every day since."
+corin neutral "And he wasn't."
+bryn grieving "No. He wasn't."
+
+@diary people Bryn, Sergeant Dane, Sister Maeve, Marek
+@diary places Sallow's Rest, the eastern line
+@ach the_one_who_got_up
+
+@ach the_one_who_got_up
+@diary places Sallow's Rest, the eastern line

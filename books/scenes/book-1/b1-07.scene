@@ -1,0 +1,108 @@
+# converted from 07-the-warden.md
+@title The Warden
+@bg crossing
+@mood uneasy
+
+narrate He was waiting for them at the crossing, with four men and a folding table.
+narrate A folding table. Corin had never seen one. It was a beautiful thing — hinged, oiled, with a green baize top — and the Warden had set it up on the wet stone of the crossing and put a lamp on it, and was writing, and looked up when they came out of the reeds as though they were a delivery he had been expecting.
+narrate He was perhaps fifty. Grey coat, grey gloves, grey eyes, and a face that had been carefully arranged into pleasantness so long ago that it had set that way.
+bryn neutral Corin,
+narrate Corin stopped walking.
+warden neutral We haven't met,
+warden neutral You'll forgive me. I like to know who I'm speaking to. It saves time.
+narrate Cael was not with them.
+narrate Corin had woken that morning and found him gone — no note, no tracks, nothing but a cup on a flat stone, washed out and turned upside down, which the dog had investigated at length and then looked at Corin in a way that clearly meant well, what did you expect.
+narrate So it was Corin, Bryn, and nine survivors who came out of the Mire and found a man with a folding table waiting for them.
+warden neutral These nine,
+warden neutral Denied at the eastern line, I believe. You brought them in.
+corin neutral Yes.
+warden neutral That was correct of you.
+warden neutral I want you to know that I think so. It was correct and it was against regulation, and I am noting both.
+narrate He asked Corin to sit down.
+narrate Corin did not sit down.
+corin neutral As you like.
+corin neutral I have a proposal. You have been in the Mire eleven weeks. You know the ground, you know the villages, and — this is the part that interests me — you have met the man we are looking for and you have not yet killed him, which is more than any of my people have managed.
+warden neutral You've met him?
+warden neutral Twice.
+warden neutral Both times he was very polite and both times I was the one who left.
+narrate He looked up.
+corin neutral Bring him to me, Corin.
+narrate The lamp hissed.
+corin neutral You'd have a commission,
+corin neutral A real one. Company rank. You'd be the youngest in eleven years. You'd have the road, the men, the authority to open that eastern line and let forty thousand people through it.
+corin neutral That is not a small thing. I am not offering you a small thing.
+warden neutral And Cael.
+corin neutral And Cael.
+warden neutral To hang him.
+corin neutral To try him.
+corin neutral The distinction will not matter to him, but it matters to me, and I am the one who has to write it down.
+narrate Corin looked at the table. At the baize. At the lamp. At the four men behind it, who were not looking at him, because they had been told not to.
+warden neutral Ask me the question,
+corin neutral I have.
+corin neutral No.
+corin neutral You asked me a thing with an offer on it. Ask me the real one. The one you've been getting to.
+narrate The Warden was quiet for a moment.
+narrate And then he smiled — a real smile, tired, and for one second he looked like a person.
+warden neutral Very well,
+warden neutral Do you think we burned the Hollow because we are wicked?
+corin neutral Yes.
+warden neutral Then you're a fool and I'll have to explain it.
+warden neutral Twelve years ago the Grey Fever came out of the Mire. It killed eleven thousand people in the eastern provinces before we sealed the roads. Eleven thousand, Corin. Do you know what it does if it reaches a city? It doesn't kill eleven thousand. It kills the city, and then the next one, and then it reaches the coast and it gets on a ship.
+narrate He stood up.
+warden neutral So we sealed the roads. And we keep them sealed. And when the Fever surfaces in a village inside the quarantine, we burn the village.
+warden neutral It is not a good thing. It is a correct thing. And I have done it thirty-one times and I have written every name down and I will answer for every one of them at the end, and that is the whole of my defence.
+narrate Corin's hands had gone cold.
+warden neutral There were four people in that shrine who could not walk,
+warden neutral Sister Maeve went back for them.
+corin neutral Yes,
+corin neutral I know. I read it in the report. It was in the report because one of my archers wrote it down and then asked to be transferred, and I approved the transfer, because a man who cannot do the arithmetic has no business in the field.
+corin neutral Would you like to know what I wrote next to her name?
+warden neutral No.
+corin neutral Correct.
+corin neutral That's what I wrote. Correct. Because she was. And so am I. And those two things are true at the same time and the world is like that and you are nineteen.
+warden neutral Bring me Cael,
+warden neutral and I will open the eastern line tomorrow. Forty thousand people, Corin. I will put it in writing. I will sign it in front of you.
+narrate He held out the pen.
+choice
+* "Take the pen"  => truth-2, conviction+2, goto:b1_07_a
+* "Refuse"  => conviction+2, mercy+1, bonds+1, goto:b1_07_rejoin
+* [Truth 3] "You already know where he is. Why me?"  => truth+3, goto:b1_07_rejoin
+end
+
+@label b1_07_a
+narrate He took the pen.
+narrate He wrote the number. It was a small number, and he had done the arithmetic, and the arithmetic was correct, and the arithmetic was the whole of the reason.
+warden neutral "Good. You understand now."
+corin neutral "I understand the arithmetic."
+warden neutral "There is no other kind of understanding."
+narrate There was. But it was going to take him three more books to be able to say so.
+@goto b1_07_rejoin
+
+@label b1_07_rejoin
+
+narrate Corin did not take the pen.
+narrate He asked the question instead.
+corin neutral You already know where he is.
+narrate The Warden's hand stayed exactly where it was.
+corin neutral Yes,
+warden neutral You've met him twice. You know he lives in the black house at the edge of the Hollow. You could have taken him any time in twelve years with twenty men and a rope.
+corin neutral Yes.
+warden neutral So why me?
+narrate The Warden looked at him for a long moment. And then he did something Corin had not expected: he put the pen down, and sat down himself, and became, for the first time in the conversation, an ordinary tired man at the end of a long day.
+corin neutral Because he doesn't run from you,
+warden neutral Twelve years,
+warden neutral Three attempts. Every time, we surround him and every time he is simply not there, and my people come back with a story about a fog and a voice and a cup of tea. He does not run from us, Corin. He dismisses us. And then you walk into his house with a dog and he makes you tea and he tells you about his daughter.
+narrate He picked the pen back up.
+corin neutral I am not asking you to bring him in because you're a good soldier. I am asking because you are the first person in twelve years he has not been able to dismiss. And I want to know why, and so do you.
+warden neutral And if I say no?
+warden neutral Then I will write something down next to your name as well.
+warden neutral It won't be correct. I'm still deciding what it will be.
+narrate They walked north for two days.
+narrate On the second night Bryn said, out of nowhere, apropos of nothing:
+corin neutral He was right, you know. About the arithmetic.
+warden neutral I know.
+corin neutral I know you know.
+corin neutral That's what worries me.
+
+@ach the_pen_and_question
+@diary places the crossing

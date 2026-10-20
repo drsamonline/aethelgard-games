@@ -1,0 +1,105 @@
+# converted from 08-what-bryn-left.md
+@title What Bryn Left
+@bg field
+@mood grief
+
+narrate They were three days north of the crossing, camped in the shell of an old watchtower, when Corin finally asked.
+narrate He had been not-asking it since Sallow's Rest. Eleven weeks. He had carried it the way you carry a stone in your boot — not enough to stop you, exactly, just enough that every step was a decision.
+corin neutral Bryn.
+bryn neutral Mm.
+corin neutral What did you do.
+narrate Bryn did not pretend not to understand. That was, Corin thought later, the only mercy in it.
+narrate He put down the stick he had been whittling. He looked at the fire for a while. And then he told it, from the beginning, in the flat voice of a man who had told it before — and this time Corin knew that flat voice for what it was, because he had heard it in a burned kitchen eleven weeks ago.
+narrate Twelve years ago Bryn had been a sergeant of the eastern line.
+narrate Not a great one. A competent one. The kind of sergeant who holds a checkpoint and does the arithmetic and does not lose men, and who is worth more to an army than three heroes.
+narrate When the Fever came out of the Mire, the line was sealed. Bryn's company held the eastern crossing for four months. In those four months he turned back two thousand people.
+narrate He knew their names. He wrote them down. That was the regulation.
+corin neutral And then Cael came,
+bryn neutral And then Cael came.
+narrate He came at dusk, on foot, carrying his daughter.
+narrate Ilsa was seven then. Seven when the Fever came, and seven when she died, and seven when she made the cushion — and Corin had imagined her older, because a man telling you about his daughter's embroidery does not sound like a man with a seven-year-old in the house.
+narrate She had been ill for a week. Cael had done everything a hedge healer could do, which was a great deal, and it had not been enough, and on the seventh day he had wrapped her in his coat and walked eleven miles to a checkpoint to beg for medicine.
+narrate Bryn was on the gate.
+bryn neutral The Fever?
+corin neutral Yes.
+bryn neutral Then you can't come through.
+corin neutral She's seven.
+bryn neutral Then she's seven and she can't come through.
+narrate Corin had heard this part before. He had heard it in a hundred retellings, in a hundred taverns, in a hundred mouths — the checkpoint sergeant who did his job. It was practically a proverb. Old Bryn, who held the line. Men said it with admiration.
+corin neutral They said it with admiration,
+bryn neutral Yes.
+corin neutral And you never corrected them.
+bryn neutral No,
+bryn neutral I let them say it for eleven years, and every time, I—
+bryn neutral It doesn't matter.
+corin neutral Bryn.
+bryn neutral I let them say it,
+bryn neutral because it was the only version of me that could still get up in the morning.
+bryn neutral He didn't beg,
+bryn neutral That's what I want you to understand. I was ready for begging. I had a whole speech for begging, I'd used it eleven times that month. He didn't beg.
+corin neutral What did he do?
+bryn neutral He asked me my name.
+narrate The fire cracked.
+bryn neutral He said: what's your name, sergeant. And I told him. And he said: Bryn, I want you to remember that I asked you nicely. And then he turned around and walked eleven miles back into the Mire with a seven-year-old in his arms, and he did not look back once, and I stood on that gate and watched him go and I did not open it.
+narrate Bryn's voice had not changed at all. That was the worst of it. It had not changed at all.
+narrate The house came later.
+narrate Four months later, when the line pushed into the Mire, Bryn's company was sent ahead to clear the villages. Cael's house was on the list because Cael was on the list — because by then he had been to the deep places and come back wrong, and the Fever had taken Ilsa anyway, and there were rumours, and rumours are enough for a list.
+bryn neutral I didn't know it was his house,
+bryn neutral That's true and it's also the worst thing I've ever said out loud. I had a list of forty addresses and I burned them in order and I did not read the names, because reading the names was how you stopped being able to do it.
+corin neutral And he was inside.
+bryn neutral Yes.
+corin neutral You knew he was inside.
+bryn neutral ...Yes.
+corin neutral You heard him.
+bryn neutral Yes.
+corin neutral And you walked away.
+narrate Bryn did not answer for a long time.
+corin neutral I walked away,
+corin neutral I stood in his garden and I listened to my friend scream, and I thought about the arithmetic, and I walked away, and the men behind me walked away because I was their sergeant and I walked away first.
+narrate They sat there.
+narrate The dog had put its head in Bryn's lap at some point and Bryn had not noticed and was stroking it without looking.
+corin neutral So the version where he killed her,
+corin neutral The one you told me.
+bryn neutral It's the version where I didn't.
+corin neutral And the version where he's a monster.
+bryn neutral It's the version where I'm a soldier.
+narrate Corin looked at him. At this grey, tired, competent man who had spent eleven weeks keeping him alive — who had saved his life in Sallow's Rest, who had walked forty miles for him, who had sat outside a black house for six hours because he could not make himself go in.
+corin neutral You came back for him,
+bryn neutral No.
+corin neutral Bryn. You came back. You told me — you said you were coming back from the Mire looking for a man you knew you weren't going to find.
+bryn neutral I was.
+corin neutral That's coming back.
+bryn neutral It's not.
+bryn neutral It's coming back too late. It's the thing you do so you can say you did it. You don't get to call that coming back.
+choice
+* "Then come back now. With me"  => bonds+3, mercy+1, goto:b1_08_a
+* "You should have told me"  => truth+2, bonds-1, goto:b1_08_rejoin
+* [Mercy 3] "Sit with him. Say nothing. Let him have it"  => mercy+2, bonds+2, goto:b1_08_rejoin
+end
+
+@label b1_08_a
+corin warm "Then come back now. With me."
+bryn grieving "I can't."
+corin warm "You can. You just walk. It's the thing you taught me."
+narrate Bryn laughed, which was rare, and then he did not come back, because it was never about the walking.
+@goto b1_08_rejoin
+
+@label b1_08_rejoin
+
+narrate Corin sat with him.
+narrate He did not say anything. There was nothing to say that was not a lie of one kind or another, and he had been taught by a woman who was now dead not to lie to people at the end of things.
+narrate So he sat.
+narrate And after a while, Bryn cried — once, briefly, the way a man cries who has not done it in eleven years and is not going to make a habit of it — and then he wiped his face with the back of his hand and looked at the fire and said, in a perfectly ordinary voice:
+corin neutral We should sleep. Long walk tomorrow.
+bryn neutral Where?
+corin neutral North.
+corin neutral He's been waiting for you to come to him. He told me, the night the Hollow burned. He said: when the boy is ready, tell him to come north.
+narrate Corin stared at him.
+bryn neutral You've seen him since the Hollow?
+corin neutral Twice.
+bryn neutral And you didn't—
+bryn neutral I'm telling you now,
+bryn neutral That's the only way I know how to do anything.
+
+@ach eleven_years
+@diary places the watchtower

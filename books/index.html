@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aethelgard — The Books</title>
+<meta name="description" content="A visual novel in three books. A soldier, a healer, and the Mire between them.">
+<meta name="theme-color" content="#12100e">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ the stage ============ -->
+<div id="stage">
+  <div id="bg" class="bg"></div>
+  <div id="vignette"></div>
+
+  <header class="bar top">
+    <span id="chapter-title">—</span>
+    <span class="bar-btns">
+      <button id="btn-backlog" title="History (B)">History</button>
+      <button id="btn-diary"   title="Diary (D)">Diary</button>
+      <button id="btn-save"    title="Save (S)">Save</button>
+      <button id="btn-settings2" title="Settings">⚙</button>
+    </span>
+  </header>
+
+  <div id="portrait" class="portrait"></div>
+
+  <div id="text-box" class="text-box">
+    <div id="speaker-name" class="speaker"></div>
+    <div id="text-body" class="text-body"></div>
+    <div id="advance" class="advance">▼</div>
+  </div>
+
+  <div id="choice-wrap" class="choice-wrap"></div>
+</div>
+
+<!-- ============ title screen ============ -->
+<div id="screen-title" class="screen on">
+  <div class="title-inner">
+    <p class="kicker">A visual novel in three books</p>
+    <h1>Aethelgard</h1>
+    <p class="sub">The Awakening &middot; The Crown's Shadow &middot; The Last Dawn</p>
+    <div class="menu">
+      <button id="btn-new">New game</button>
+      <button id="btn-continue">Continue</button>
+      <button id="btn-diary-title">The Diary</button>
+      <button id="btn-settings">Settings</button>
+    </div>
+    <p id="save-info" class="dim small"></p>
+    <p class="dim small by">By Dr. Sohil Momin</p>
+  </div>
+</div>
+
+<!-- ============ ending ============ -->
+<div id="screen-ending" class="screen"></div>
+
+<!-- ============ overlays ============ -->
+<div id="diary" class="overlay" role="dialog" aria-modal="true" aria-label="The Diary">
+  <div class="sheet">
+    <div class="sheet-head"><h2>The Diary</h2><button data-close="diary">Close</button></div>
+    <div id="diary-tabs" class="dtabs"></div>
+    <div id="diary-body" class="sheet-body"></div>
+  </div>
+</div>
+
+<div id="settings" class="overlay" role="dialog" aria-modal="true" aria-label="Settings">
+  <div class="sheet">
+    <div class="sheet-head"><h2>Settings</h2><button data-close="settings">Close</button></div>
+    <div id="settings-body" class="sheet-body"></div>
+  </div>
+</div>
+
+<div id="backlog" class="overlay" role="dialog" aria-modal="true" aria-label="Backlog">
+  <div class="sheet">
+    <div class="sheet-head"><h2>History</h2><button data-close="backlog">Close</button></div>
+    <div id="backlog" class="sheet-body"></div>
+  </div>
+</div>
+
+<div id="intro-card" class="intro-card"></div>
+<div id="scene-end" class="scene-end"></div>
+<div id="toasts" class="toasts"></div>
+<div id="boot-error" class="boot-error"></div>
+
+<script src="js/core.js"></script>
+<script src="js/script.js"></script>
+<script src="js/chars.js"></script>
+<script src="js/graphics.js"></script>
+<script src="js/music.js"></script>
+<script src="js/play.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/mods.js"></script>
+<script src="js/endings.js"></script>
+<script src="scenes/manifest.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# an ending
+@title The Weight
+@bg field
+@mood dread
+
+narrate It worked, and Corin did it alone, and he did it the way he had learned to in five years of ledger-keeping: he wrote it down, and he did not flinch, and he paid the till.
+narrate He was twenty-four years old and he had ended it, and by the spring he was the most famous man in the eastern provinces and the most dangerous.
+narrate Because a man who can end a plague is a man who can start one, and the Order knew it, and the Order came to him — not with a rope this time, with a pen.
+narrate He took it.
+narrate He was very good at it. That was the horror of it.
+warden neutral "Say the number."
+corin neutral "Two hundred."
+warden neutral "That's the population. Say the number."
+corin neutral "If we don't, it reaches the coast in nineteen days, and the number stops being a number."
+narrate Corin signed it.
+narrate And then he sat alone in a room with a ledger and read back four pages, and found nothing, and went to bed, and slept perfectly, and did not dream of anything at all.
+
+@ending weight

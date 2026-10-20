@@ -1,0 +1,92 @@
+# converted from 06-what-he-came-to-say.md
+@title What He Came To Say
+@bg mire
+@mood grief
+
+narrate They sat in a clearing for two days and Cael told him all of it.
+narrate The eleven miles. The gate, and the sergeant's name. The four days of trying not to need the hole in the field. What he had asked for and what he had not asked for and the fact that he had known, standing there, exactly what he could have said.
+narrate Three days, said Cael, and the Warden wrote it down, and Corin listened to a story about a man he did not remember being told before, and every so often put his marked hand on his knee and looked at it.
+narrate The fire. The cushion. The decision not to feel anything.
+narrate Ashen Reach, where he could have saved four and said I can't.
+narrate The second bargain — later, when I'm ready — which was worse than the first.
+narrate Eleven weeks of watching a boy through the trees.
+narrate The Hollow, and going north on purpose, and wanting a nineteen-year-old to see a shrine burn.
+narrate And then the field, and a boy who said tell me her voice first, and an old man who had laughed for the first time in twelve years.
+narrate At the end of the second day Cael said:
+corin neutral Ask me why I came.
+cael neutral Why did you come?
+corin neutral To take it back.
+narrate The fire cracked. The Warden's pen stopped.
+corin neutral Explain,
+cael neutral I'm dying,
+cael neutral That's not a bid for sympathy, it's a fact, and the Warden can write it down. The mark's broken. It's been eating me for seventeen years and it's nearly finished, and when it finishes there'll be a hole in the world where the only other person who could end the Fever used to be.
+narrate He held up his hand — the cracked one, grey and spidered to the wrist.
+corin neutral I came to give it to you. Or to take yours. I hadn't decided which, on the walk down, and then I saw you and I decided.
+cael neutral Which?
+corin neutral Take yours.
+cael neutral You're twenty-four,
+cael neutral and you've lost a mother, a woman who gave you bread, five years of a friend, and the name of the only man who ever held a line for you. And you have got — the Warden tells me — eleven entries in a ledger about things you can no longer feel, and a hand that has started to crack at the edge of the mark, and perhaps two more uses in you before you are not a person anymore.
+narrate He looked at Corin.
+corin neutral I have four days. I'm going to spend them at that hole in the field, and I'm going to ask for the Fever to be ended, everywhere, forever, and it will take everything I have and there will be nothing left of me and that is fine, because there is nothing left of me anyway and there is no one who will miss it.
+cael neutral That's not true.
+corin neutral It is true.
+cael neutral Bryn will miss it.
+narrate Cael went very still.
+cael neutral Bryn has spent seventeen years missing it,
+cael neutral He's had practice.
+narrate Corin looked at his own hand for a long time.
+cael neutral No.
+corin neutral You don't get to—
+corin neutral I know what you're doing,
+corin neutral You did it in the field and you did it for eleven weeks through the trees and you're doing it now. You're arranging me again. You've decided that the correct ending is the one where the old man pays and the boy walks away clean, and you've decided it because you've spent seventeen years being the man who pays, and because dying in a hole in a field is the only thing you've ever wanted that isn't selfish.
+cael neutral That is—
+corin neutral It's true and you know it's true.
+corin neutral And it's the arithmetic. It's the same arithmetic you did at Sallow's Rest and in the reeds and in a doorway three miles north. You've been doing the arithmetic for seventeen years and the answer is always I pay, and I want to know when you're going to stop.
+narrate Cael did not answer.
+corin neutral You didn't ask her,
+corin neutral That's the thing I keep coming back to. You stood at that hole with the power to end the Fever and you asked for three days, and you have spent seventeen years calling it the worst thing you ever did. But you never once asked her what she wanted.
+narrate The fire cracked.
+cael neutral She was seven,
+corin neutral She was seven and she spent three days pretending to be all right so that you wouldn't feel bad,
+corin neutral She worked out what you'd done on the second day and she spent the third day taking care of you. And you have never once asked what she would have wanted you to ask for at that hole.
+narrate Cael sat very still.
+narrate The Warden wrote it down.
+narrate And then, after a long time, the old man put his face in his cracked hand and said, in a voice that was not a physician's voice at all:
+cael neutral I don't know.
+corin neutral No,
+corin neutral So we're going to go to that hole in the field together, and we're going to ask for the Fever to be ended, and we're going to ask properly — and whatever it takes, it takes from both of us. That's the deal. That's the only deal.
+cael neutral That's not how it works.
+corin neutral Then we'll make it work.
+choice
+* "Both of us. Together. Whatever it costs"  => bonds+3, mercy+2, truth+2, goto:b3_06_a
+* "You pay. It's what you want"  => mercy-2, conviction+2, goto:b3_06_rejoin
+* "Nobody pays. We find another way"  => truth+3, conviction-1, goto:b3_06_rejoin
+* "You've waited seventeen years. Wait one more winter."  => conviction+2, truth-2, bonds-2, goto:b3_06_rejoin
+end
+
+@label b3_06_a
+corin resolute "Both of us. Together. Whatever it costs."
+cael grieving "It will cost everything."
+corin resolute "Then it costs everything."
+narrate It was the only answer that had ever worked, in any of the three books, and it took a burnt man and a soldier twenty-three years to arrive at it.
+@goto b3_06_rejoin
+
+@label b3_06_rejoin
+
+narrate They walked north.
+narrate Four days, at Cael's pace, which was slow, and which Corin did not once mention.
+narrate On the third night Cael said, out of nowhere, apropos of nothing, in the dark:
+cael neutral There's a thing I never told anyone.
+corin neutral Tell me.
+cael neutral When I was eleven weeks watching you,
+cael neutral there was a night I nearly stopped. The night of the Hollow. I was three miles north with my hands in a woman's chest and I heard it burn, and I knew you were in there, and I could have come south.
+corin neutral I know. You told me. You said four lives against one.
+cael neutral I said that because it was true.
+cael neutral But it wasn't the reason. The reason was that if I'd come south, I would have had to choose you. And I'd spent eleven weeks arranging for you to choose yourself, because I didn't want to be the man who was chosen.
+narrate The fire moved.
+corin neutral You wanted me to be like you,
+cael neutral No.
+cael neutral I wanted you to be the thing I would have been if I'd been braver at nineteen. And then I met you, and you were that, and I have spent five years walking north to tell you so.
+narrate He lay back down.
+cael neutral Go to sleep,
+cael neutral Long walk tomorrow.
