@@ -11,7 +11,7 @@
 (function () {
 const G = window.Game = window.Game || {};
 
-G.VERSION = "1.0.1";
+G.VERSION = "1.0.2";
 G.ENGINE = "Saga";
 G.SLUG   = "saga";          // used for save filenames
 G.SAVE_FORMAT = "saga-save";

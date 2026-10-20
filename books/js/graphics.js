@@ -83,17 +83,22 @@ G.setBg = function (name) {
 
 /* ---------- build the index from a directory listing ---------- */
 G.buildSpriteIndex = async function () {
-  try {
-    const res = await fetch(G.BASE + "index.json");
-    if (res.ok) {
-      const list = await res.json();
-      const map = {};
-      list.forEach(f => { map[f.toLowerCase()] = f; });
-      map.__complete = true;
-      G.spriteIndex = map;
-      return list.length;
-    }
-  } catch (e) {}
+  // The list may be embedded (assets/sprites/index.js) so portraits resolve even
+  // when the page is opened from the filesystem and fetch() is unavailable.
+  let list = Array.isArray(G.SPRITE_LIST) ? G.SPRITE_LIST : null;
+  if (!list) {
+    try {
+      const res = await fetch(G.BASE + "index.json");
+      if (res.ok) list = await res.json();
+    } catch (e) {}
+  }
+  if (Array.isArray(list)) {
+    const map = {};
+    list.forEach(f => { map[f.toLowerCase()] = f; });
+    map.__complete = true;
+    G.spriteIndex = map;
+    return list.length;
+  }
   // no manifest — fall back to the naming rule and let the browser 404 quietly
   G.spriteIndex = { __complete: false };
   return 0;

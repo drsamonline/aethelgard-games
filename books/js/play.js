@@ -309,10 +309,10 @@ G.showCard = function (who) {
 
 /* ---------- backlog ---------- */
 G.openBacklog = function () {
-  const el = document.getElementById("backlog");
+  const el = document.getElementById("backlog-body");
   el.innerHTML = (G.state.history.slice(-80).map(h =>
     h.who ? `<div class="bl"><b>${G.esc(h.who)}</b> ${G.esc(h.text)}</div>`
           : `<div class="bl narr">${G.esc(h.text)}</div>`).join("")) || "<p>Nothing yet.</p>";
-  el.classList.add("show");
+  document.getElementById("backlog").classList.add("show");
 };
 })();

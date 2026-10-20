@@ -159,9 +159,16 @@ G.loadScenes = async function () {
   const man = G.SCENE_MANIFEST || [];
   for (const entry of man) {
     try {
-      const res = await fetch(entry.file);
-      if (!res.ok) throw new Error(res.status);
-      const src = await res.text();
+      // Prefer the embedded bundle (scenes/bundle.js). It is plain script, so the
+      // game also runs when index.html is opened straight from the filesystem —
+      // where the browser blocks fetch() and every button would otherwise be dead.
+      let src = (G.SCENE_SOURCES && G.SCENE_SOURCES[entry.id] != null)
+        ? G.SCENE_SOURCES[entry.id] : null;
+      if (src == null) {
+        const res = await fetch(entry.file);
+        if (!res.ok) throw new Error(res.status);
+        src = await res.text();
+      }
       const s = G.parseScene(src, entry.id);
       s.title = s.title || entry.title || entry.id;
       s.book = entry.book || 1;

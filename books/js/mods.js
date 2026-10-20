@@ -206,9 +206,14 @@ G.loadModScenes = async function () {
   const pending = G.MODS._pendingScenes || [];
   for (const s of pending) {
     try {
-      const res = await fetch(s.file);
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      const src = await res.text();
+      // embedded first (works from file://), network as the fallback
+      let src = (G.MOD_SCENE_SOURCES && G.MOD_SCENE_SOURCES[s.file] != null)
+        ? G.MOD_SCENE_SOURCES[s.file] : null;
+      if (src == null) {
+        const res = await fetch(s.file);
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        src = await res.text();
+      }
       const parsed = G.parseScene(src, s.id);
       parsed.title = parsed.title || s.title || s.id;
       parsed.book = s.book || 8;
@@ -259,14 +264,24 @@ G.discoverMods = async function () {
   // mods/mods.json lists the folders to try; a mod may also self-register
   // by pushing onto window.SAGA_MODS (or the older AETHELGARD_MODS).
   try {
-    const res = await fetch("mods/mods.json");
-    if (res.ok) {
-      const list = await res.json();
+    // The mod list and each mod's source may be embedded (scenes/bundle.js) so
+    // mods also work from file://, where fetch() is blocked.
+    let list = Array.isArray(G.MOD_LIST) ? G.MOD_LIST : null;
+    if (!list) {
+      const res = await fetch("mods/mods.json");
+      if (res.ok) list = await res.json();
+    }
+    if (list) {
       for (const m of list) {
         try {
-          const js = await fetch(m.file || ("mods/" + m.id + "/mod.js"));
-          if (!js.ok) { G.MODS.errors.push(`mod file missing: ${m.id}`); continue; }
-          const src = await js.text();
+          const file = (typeof m === "string") ? ("mods/" + m) : (m.file || ("mods/" + m.id + "/mod.js"));
+          const id = (typeof m === "string") ? m : (m.id || file);
+          let src = (G.MOD_SOURCES && G.MOD_SOURCES[file] != null) ? G.MOD_SOURCES[file] : null;
+          if (src == null) {
+            const js = await fetch(file);
+            if (!js.ok) { G.MODS.errors.push(`mod file missing: ${id}`); continue; }
+            src = await js.text();
+          }
           const before = G.MODS.discovered.length;
           window.SAGA_MODS = window.SAGA_MODS || window.AETHELGARD_MODS || [];
           const declaredBefore = window.SAGA_MODS.length;
@@ -277,10 +292,10 @@ G.discoverMods = async function () {
             G.registerMod(window.SAGA_MODS[i]);
           }
           if (G.MODS.discovered.length === before) {
-            G.MODS.errors.push(`mod ${m.id} loaded but declared nothing`);
+            G.MODS.errors.push(`mod ${id} loaded but declared nothing`);
           }
         } catch (e) {
-          G.MODS.errors.push(`mod ${m.id} threw on load: ${e.message}`);
+          G.MODS.errors.push(`mod ${id} threw on load: ${e.message}`);
         }
       }
     }
