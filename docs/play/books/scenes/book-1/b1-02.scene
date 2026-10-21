@@ -1,0 +1,107 @@
+# converted from 02-the-man-in-the-mire.md
+@title The Man in the Mire
+@bg mire
+@mood uneasy
+@card maeve
+
+narrate The Mire did not have an entrance. There was simply a moment when you looked back and the road was gone.
+narrate Corin looked back three times. The third time there was only grey — not fog, exactly. Fog moves. This hung.
+bryn neutral Stop doing that,
+corin neutral Doing what.
+bryn neutral Looking back. You do it when you're deciding whether you've made a mistake.
+corin neutral I'm not—
+bryn neutral You've done it three times.
+bryn neutral It's a good instinct. Keep it. Just don't do it out loud.
+narrate The dog trotted between them, veering off every so often to investigate something unspeakable, and returning each time with the expression of a creature that had made a decision and would not be revisiting it.
+narrate They walked for six hours.
+narrate Bryn talked for about four of them, and Corin worked out somewhere in the third that most of it was true, some of it was lies, and all of it was a kind of test.
+bryn neutral The Coven were healers,
+bryn neutral Once. Forty years back, maybe more. Midwives, bone-setters, the ones you went to when the Order's physicians wanted paying up front. They lived out here because nobody else wanted to.
+corin neutral And now?
+bryn neutral Now they're the thing that comes out of the trees at dusk.
+bryn neutral That's what a thing becomes when you leave it alone long enough.
+corin neutral Leave it alone?
+bryn neutral The Order sealed the roads. Twelve years ago, when the Fever came. Sealed them, posted men, and let the Mire sort itself out. That's the word they used. Sort.
+bryn neutral Forty thousand people out here, Corin. Nobody counted them on the way out.
+narrate Corin was quiet for a while.
+bryn neutral That's not—
+corin neutral Go on.
+bryn neutral That's not what the Order is for.
+bryn neutral No,
+bryn neutral It isn't.
+narrate Sister Maeve's house stood on the one piece of high ground for a mile in any direction: a low stone cottage with a herb garden that had no business surviving in a bog, and a chimney with smoke coming out of it, which by that point in the day was the most beautiful thing Corin had ever seen.
+narrate She was in the doorway before they reached the gate. Small, grey-haired, sleeves already rolled up, and she looked at Corin the way a physician looks at a wound — assessing, unhurried, and not especially pleased.
+corin neutral You're the militia boy.
+bryn neutral Corin.
+corin neutral You're the one who got up.
+corin neutral There's stew. Wash your hands.
+narrate The dog went in ahead of him.
+maeve neutral Not you,
+narrate The dog came back out.
+narrate The stew was the best thing Corin had eaten in his life. He was aware, eating it, that this was partly because he had been eating militia rations for two hundred and twelve days, and partly because he had spent the morning burying forty-two people. He decided not to think about which part.
+narrate Bryn ate in silence. Maeve watched them both.
+bryn neutral Say it,
+maeve neutral I wasn't going to.
+bryn neutral You were going to say it with your face.
+maeve neutral He's nineteen, Bryn.
+bryn neutral He got up.
+maeve neutral He got up once. So did you, once.
+maeve neutral Do you know what you're walking towards?
+corin neutral No,
+maeve neutral Good,
+maeve neutral That's the only honest answer. Keep it.
+narrate Later, with the fire low and the dog asleep against Corin's leg, Bryn told him about Cael.
+narrate He told it well. That was the thing. Bryn was a better liar than Corin had expected, and he told it in the flat voice of a man who had told it before, which is the hardest kind of lie to catch.
+narrate A healer in the Mire. A good man, once. Went into the deep places, made a bargain, came back wrong. Something about a daughter, something about the Fever, something Corin couldn't quite hold onto. And then — the part Bryn said without looking at him — he killed her.
+narrate Not the Fever. Him. That was the lie.
+bryn neutral He put his own daughter in the ground with his own hands,
+bryn neutral That's what he is now. That's what you're walking towards.
+narrate The fire cracked.
+maeve neutral Bryn,
+bryn neutral Don't.
+maeve neutral Bryn.
+bryn neutral I said don't—
+maeve neutral He sat with her for three days.
+maeve neutral Three days, in that house, with the fever on her, and he did not sleep and he did not eat and he did not leave, and on the third morning she died in his arms while he was telling her about the time she fell in the river. He did not put her in the ground.
+narrate The fire cracked again.
+maeve neutral I did,
+maeve neutral Because he couldn't.
+narrate Corin looked at Bryn.
+narrate Bryn was looking at the fire with an expression Corin had seen once before — on the face of a man in Sallow's Rest who had come out of his own house and found the street full of things without faces.
+corin neutral Why did you say that,
+maeve neutral Because it's easier.
+corin neutral Easier than what?
+narrate Bryn didn't answer.
+choice
+* "Tell me the truth about him"  => truth+1, bonds+1, goto:b1_02_a
+* "You don't have to"  => mercy+1, goto:b1_02_rejoin
+* [Finesse 2] "Say nothing. Watch him"  => truth+2, goto:b1_02_rejoin
+* "Say nothing. He will tell you when he is ready."  => mercy+1, truth-2, conviction+1, goto:b1_02_rejoin
+end
+
+@label b1_02_a
+corin neutral "You knew him. Before."
+bryn dry "I knew him the way you know a man you trained. Which is to say I knew what he would do and I did nothing about it."
+narrate That was the first true thing Bryn had said, and Corin filed it away, and neither of them mentioned it again for eleven years.
+@goto b1_02_rejoin
+
+@label b1_02_rejoin
+
+narrate Corin said nothing.
+narrate He watched.
+narrate And what he saw was this: Bryn, who had spent six hours talking, could not find a single word. He sat with his hands on his knees and his eyes on the fire and every so often his jaw would move like a man about to speak, and then it would stop.
+narrate Maeve got up and banked the fire and went to bed and did not look at either of them.
+narrate It was a long time before Bryn spoke.
+maeve neutral He was my friend,
+corin neutral I know.
+maeve neutral You don't.
+maeve neutral You think that means I liked him. It means I knew him. There's a difference and the difference is that I knew exactly what he was and I still—
+narrate He stopped.
+corin neutral Still what?
+maeve neutral Nothing.
+maeve neutral Sleep. We're walking to the Hollow at dawn.
+corin neutral What's the Hollow?
+bryn neutral Where he lives,
+
+@ach read_the_room
+@diary places the Mire

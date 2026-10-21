@@ -1,0 +1,22 @@
+@title The Wintering
+@bg northmire
+@mood grief
+
+narrate The winter after Sallow's Rest was the longest of Corin's life, and he spent it in a hut on the north edge of the Mire with a trapper called Halla who did not talk before noon.
+@card halla
+halla neutral "You're the one who got up."
+corin neutral "Everyone keeps saying that."
+halla dry "It's the only interesting thing about you."
+
+narrate She taught him to set a snare, and to read a track, and to sit still for four hours in the cold without deciding anything.
+
+choice
+* "Ask her about the Coven"          => truth+1, lore:north_mire_coven
+* "Say nothing. Watch the snow."     => conviction+1
+* [Bonds 3] "Tell her about Marek."  => bonds+2, lore:marek_bakery
+end
+
+narrate He did not think about the bread that winter. That was the first sign, and he did not notice it.
+
+@ach mod_wintering
+@diary places the north Mire

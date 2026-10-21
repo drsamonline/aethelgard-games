@@ -1,0 +1,111 @@
+# converted from 06-the-long-night.md
+@title The Long Night
+@bg hollow
+@mood dread
+
+narrate They came at the change of the watch, which is the hour when the men on the wall are tired and the men coming to relieve them are not yet awake, and which every soldier in the world knows is the hour to be attacked and every officer in the world forgets.
+narrate Corin was not on a wall. He was in the shrine, changing a dressing.
+narrate He heard the horns and did not know what they were, because the Hollow did not have horns.
+narrate Then he knew.
+narrate Maeve was already moving.
+narrate That was her. Sixty years old and a bad hip and she was across the room before Corin had finished standing up, and she was not running, because Maeve had never run in her life, she was simply ahead.
+corin neutral Get the ones who can walk,
+corin neutral Out the back, into the reeds, north. Don't stop for anything you can't carry.
+cael neutral What about the ones who can't walk?
+narrate Maeve did not answer.
+corin neutral Maeve.
+cael neutral I heard you.
+corin neutral Maeve.
+cael neutral Corin.
+cael neutral There are four of them who cannot walk. There is one of me. I want you to do the arithmetic.
+narrate She turned around. She was holding a lamp and her sleeves were rolled up and she looked exactly as she had the first time he saw her, standing in a doorway, assessing a wound
+corin neutral No.
+cael neutral Do it anyway.
+corin neutral No.
+maeve neutral Do it anyway,
+maeve neutral and then go north, and then when this is over you can be angry with me for as long as you like, which is a thing I am very much looking forward to.
+narrate That was the last joke she ever made.
+narrate Corin did not laugh. He was already moving.
+narrate He got nine people out through the reeds.
+narrate He would count them, afterwards, the way he had counted forty-one in Sallow's Rest and forty-one at the eastern line. Nine. A woman, two children, a man with a broken leg who Corin carried the last quarter mile on his back, three more, and the dog, who had refused to leave and had instead run back and forth between the reeds and the shrine the entire time, herding, in a way that Corin only understood later was the dog trying to tell him something.
+narrate The Order did not chase them.
+narrate That was not mercy. Corin understood it later, standing in the reeds with nine people and a dog, watching his home burn: they were not chasing because they did not need to. There was nowhere to go. That was the whole point of the Mire. That had been the point of the Mire for twelve years.
+narrate The Hollow burned for four hours.
+narrate They were careful. That was what Corin could not get past. It was not a sack, it was not a frenzy — it was careful. They went house to house. They put the fire where the fire would work. They left the shrine for last because the shrine was stone and would take longer, and Corin stood in the reeds and watched them set the fire at the shrine's base and then stand back and wait, professionally, the way a man waits for bread.
+narrate The dog was making a sound Corin had never heard a dog make.
+corin neutral Don't,
+corin neutral Don't. Stay.
+narrate The dog stayed. It was the only order Corin ever gave that he was grateful was obeyed.
+narrate Maeve came out at the end.
+narrate She came out of the shrine door with a woman on each arm — two of the four, the two who could take a step if you held them — and she was walking, and she was upright, and for one entire second Corin's whole body filled with something so bright and stupid that he almost stood up out of the reeds.
+narrate Then the door behind her opened again, and a third patient came out, alone, on her own two feet, and Maeve turned to look at her.
+narrate The archers had been waiting.
+narrate Corin did not see who gave the order. He never found out. He spent a year trying to find out and never did.
+narrate He saw Maeve put herself between the girl and the line.
+narrate He saw her do it the way she did everything — unhurried, ahead of everyone, entirely certain.
+narrate Then the arrows came, and Maeve was on the ground, and the girl was on the ground, and the shrine was burning, and Corin was in the reeds with his hand over a child's eyes and his own eyes wide open, because he had learned at nine years old that the way to survive a thing is to keep moving until it is over, and there was nothing in the world he could move.
+narrate At dawn, the Order left.
+narrate Corin went back.
+narrate He found Maeve's body and he carried it, and then he went back and found the others, all of them, all four, and he carried them one at a time and laid them in a row in the reeds, and he did not count them, because he had learned what counting did.
+narrate He sat down next to Maeve and did not say anything for a long time.
+maeve neutral You were right,
+maeve neutral About the arithmetic.
+narrate She did not answer. She had never once answered a question she did not want to.
+maeve neutral I did it,
+maeve neutral I did it and I went north.
+narrate He put his hand on the ground.
+corin neutral I'm going to be angry with you for as long as I like.
+narrate Cael was standing at the edge of the reeds.
+narrate Corin did not know how long he had been there. The dog knew — the dog had got up and gone and sat at Cael's feet, which was, Corin would realise much later, the dog telling him something else entirely.
+corin neutral You could have stopped it,
+maeve neutral Yes.
+corin neutral You could have stopped it.
+cael neutral I was three miles north.
+cael neutral There's a family there. Four of them. Fever. I had two hours and I could spend them walking south or I could spend them walking north.
+narrate The reeds moved.
+cael neutral I went north,
+narrate Corin stood up.
+cael neutral Four people,
+corin neutral Four people.
+cael neutral Four people and you let—
+cael neutral I let four people live,
+cael neutral and I let twenty-six die, and I have done the arithmetic you are about to do to me, and I did it four hours ago, standing in a doorway three miles north with my hands in someone's chest.
+cael neutral So do it. But do it properly. Don't do the version where you get to be angry at me instead of at the thing that happened.
+narrate Corin hit him.
+narrate It was not a decision. His arm made it. Cael took it — did not block it, did not step back, took it on the jaw and went down on one knee in the wet ground and stayed there, breathing, looking at nothing.
+narrate The dog barked once.
+cael neutral Good,
+cael neutral That's the correct first move. I did the same thing, my first time.
+choice
+* "Get up. I'm not finished"  => mercy-1, conviction+1, goto:b1_06_a
+* "I'm sorry"  => mercy+1, truth+1, goto:b1_06_rejoin
+* [Bonds 2] "Say nothing. Go and sit with her"  => bonds+2, truth+1, goto:b1_06_rejoin
+* "You did this. You brought it here."  => conviction+2, mercy-2, truth-1, goto:b1_06_rejoin
+end
+
+@label b1_06_a
+corin resolute "Get up. I'm not finished."
+narrate He said it the way a sergeant says it, and he hated himself, and he said it anyway, because it was the only thing he knew how to do.
+narrate And she got up, because she was dying and she was bored of it, and there was nothing else in the room to do.
+narrate She died four hours later, still holding a rag, because he had asked her to.
+@goto b1_06_rejoin
+
+@label b1_06_rejoin
+
+narrate Corin went and sat with Maeve.
+narrate Cael did not follow him for a long time. When he came, he came slowly, and he sat down on the wet ground six feet away — not beside him, six feet, the distance of someone who has learned exactly how much room to give a person — and he did not say a word.
+narrate They sat there until the sun was fully up.
+corin neutral She was at my house. Twelve years ago. When Ilsa died. She came every day for a month and she never once told me it would be all right.
+corin neutral No,
+corin neutral She wouldn't.
+cael neutral She said: you will not survive this, and you will get up anyway, and those are not contradictory.
+cael neutral I have thought about that sentence every day for twelve years. I still don't know if she was right.
+corin neutral She was right,
+cael neutral Yes,
+cael neutral Probably.
+narrate He stood up and offered Corin his hand.
+narrate Corin looked at it for a long moment.
+narrate And then — because he was nineteen, and because he was tired, and because there was nobody left in the world to tell him not to — he took it.
+
+@ach the_long_night
+@diary places the Hollow

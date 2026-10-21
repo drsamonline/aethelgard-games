@@ -1,0 +1,87 @@
+# converted from 04-the-grey-fever.md
+@title The Grey Fever
+@bg shrine
+@mood grief
+@card sera
+@card nessa
+@card osric
+@card marta
+
+narrate It started with a man called Orrin, who had walked into the Hollow three days before with a cough he said was nothing.
+narrate By the fourth day, nine people had it.
+narrate By the sixth, thirty.
+narrate Maeve put them in the shrine — the only building with a floor you could wash — and she did it with the efficiency of someone who had done it before, because she had, twelve years ago, and she had not talked about it since.
+narrate Corin learned the Fever the way you learn a fire: by standing too close to it.
+narrate It began as a greyness at the fingertips. Then the cough. Then the skin went the colour of wet ash from the outside in, and the mind went with it — slowly, politely, the way a guest leaves a party. On the last day they were usually calm. That was the cruelest part. They were usually calm and they usually knew you.
+narrate Maeve gave him one rule and made him say it back to her.
+corin neutral Do not lie to them,
+corin neutral About anything. Not the Fever, not whether they'll see morning, not whether their children are all right. If you lie, they'll know, and the knowing will take the last thing they have.
+bryn neutral What if their children aren't all right?
+corin neutral Then you say: I don't know yet. That is not a lie. That is a fact about the future.
+narrate On the seventh day there were two beds left and three people who needed them.
+narrate Corin stood in the doorway with a bucket in each hand and understood, with a horrible, mundane clarity, that this was the whole of it. Not the faceless things. Not the mark on the door. This.
+narrate A woman named Sera, forty, with two children already recovered and waiting outside.
+narrate A man named Osric, sixty, who had built half the roofs in the Hollow and could not remember his wife's name anymore.
+narrate A girl named Nessa, eleven, who had been helping Maeve carry water until four days ago and had a brother who was nine.
+narrate Maeve did not choose. Maeve never chose. That was her rule, and Corin had never understood it until this moment — that she had made it so that she would never have to be the one, and had done it knowing it meant someone else always would be.
+bryn neutral You,
+corin neutral Me.
+bryn neutral You're the youngest person in this room and you have the most years left to carry it.
+bryn neutral That is not a compliment. It is arithmetic.
+choice
+* "Sera and Nessa"  => mercy+1, bonds+1, goto:b1_04_a
+* "Sera and Osric"  => truth+1, mercy-1, goto:b1_04_rejoin
+* "Nessa and Osric"  => conviction+1, bonds-1, goto:b1_04_rejoin
+* [Sorcery 2] "Ask Maeve about the deep places — Cael's method"  => truth+2, mercy-2, goto:b1_04_rejoin
+end
+
+@label b1_04_a
+narrate He chose Sera and Nessa.
+narrate Osric died at four in the morning, alone, calling Corin by his wife's name.
+narrate Marta Osric waited outside the shrine until it was light, and then went home to a house she had shared for forty-one years, and Corin was the one who had to tell her.
+narrate She listened, and thanked him, and closed the door.
+@goto b1_04_rejoin
+
+@label b1_04_rejoin
+
+narrate Corin chose Sera and Nessa.
+narrate He chose them because Sera had two children outside the door and Nessa had a brother who was nine, and because Osric could not remember his wife's name, and because Corin was nineteen and did not yet know that a person's worth is not measured by what they can still remember.
+narrate Osric died at four in the morning.
+narrate Corin sat with him. That was the least he could do and he knew it was the least and he did it anyway. Osric was calm. Osric held his hand and called him Marta, which was his wife's name, and asked him whether the roof was holding.
+corin neutral It's holding,
+osric neutral Good,
+osric neutral Good. You always were the careful one.
+narrate Corin did not correct him.
+narrate Maeve had said not to lie. She had not said anything about the truth arriving in a form someone else needed.
+narrate Osric's wife came at dawn. Marta. A small, straight-backed woman who had been married to him for forty-one years and who had been standing outside the shrine for six days because Maeve would not let her in.
+narrate She looked at the empty bed.
+narrate She looked at Corin.
+corin neutral You chose,
+narrate It was not a question.
+osric neutral Yes.
+corin neutral Who else was there?
+osric neutral An eleven-year-old girl.
+narrate Marta nodded. Slowly. As though she had expected the answer and had hoped to be surprised, and had not been.
+corin neutral I would have done the same,
+narrate He found Bryn outside, sitting on the wall, not looking at the shrine.
+corin neutral I put him out,
+osric neutral I heard.
+corin neutral He called me Marta.
+osric neutral I heard that too.
+osric neutral You know what your problem is.
+corin neutral Tell me.
+bryn neutral You think the right choice exists.
+bryn neutral There's a version of you in your head, about ten years older, who always knows the right thing. You're trying to be him. And every time you can't, you think you failed.
+narrate Corin said nothing.
+bryn neutral You didn't fail,
+bryn neutral You just got to be a person. Congratulations. It's the worst club there is.
+narrate The dog put its head on Corin's knee.
+corin neutral Bryn.
+bryn neutral Mm.
+corin neutral What did Cael do? In the deep places. When the Fever took his daughter.
+narrate Bryn was quiet for a long moment.
+corin neutral He asked for help,
+corin neutral And something answered.
+
+@ach arithmetic
+@diary places the shrine
