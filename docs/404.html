@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Aethelgard</title>
+<meta name="description" content="This page has slipped into the Mire. Return to Aethelgard — two free browser games by Dr. Sohil Momin.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#6b1f2a">
+<link rel="icon" type="image/svg+xml" href="/aethelgard-games/assets/favicon.svg">
+<style>
+  :root{
+    --parchment:#f3e9d2;--burgundy:#6b1f2a;--burgundy-deep:#4a131b;--gold:#b8860b;--ink-soft:#5b4a37;--ink-faint:#7d6a52;
+    --display:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+    --body:Georgia,"Iowan Old Style","Times New Roman",serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;min-height:100%}
+  body{
+    font:17px/1.7 var(--body);color:var(--ink-soft);background-color:var(--parchment);
+    background-image:
+      radial-gradient(1000px 600px at 15% -10%, rgba(184,134,11,.12), transparent 60%),
+      radial-gradient(900px 560px at 100% 4%, rgba(107,31,42,.08), transparent 58%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
+    display:flex;align-items:center;justify-content:center;min-height:100vh;padding:32px;
+  }
+  .card{
+    max-width:640px;text-align:center;border:1px solid rgba(184,134,11,.5);border-radius:5px;
+    background:linear-gradient(180deg,rgba(255,252,244,.75),rgba(255,252,244,.4));
+    padding:44px 32px 38px;position:relative;box-shadow:0 24px 50px -34px rgba(74,19,27,.5)
+  }
+  .card::before,.card::after{content:"";position:absolute;width:18px;height:18px;border:1px solid var(--gold)}
+  .card::before{left:7px;top:7px;border-right:0;border-bottom:0}
+  .card::after{right:7px;bottom:7px;border-left:0;border-top:0}
+  .rose{width:84px;height:84px;color:var(--gold);margin-bottom:8px}
+  h1{font-family:var(--display);font-size:clamp(34px,8vw,54px);line-height:1;margin:8px 0 4px;color:var(--burgundy);letter-spacing:.02em}
+  .code{font-family:var(--display);letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:var(--gold)}
+  p{margin:16px 0 0}
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-size:15px;letter-spacing:.06em;
+    text-transform:uppercase;padding:13px 22px;border-radius:3px;text-decoration:none;transition:transform .15s ease,background .2s ease
+  }
+  .btn-primary{background:var(--burgundy);color:var(--parchment);border:1px solid var(--burgundy-deep);box-shadow:inset 0 0 0 1px rgba(230,207,146,.5)}
+  .btn-primary:hover{background:var(--burgundy-deep);transform:translateY(-2px)}
+  .btn-ghost{color:var(--burgundy);border:1px solid rgba(184,134,11,.5)}
+  .btn-ghost:hover{background:rgba(184,134,11,.1);transform:translateY(-2px)}
+  .fine{margin-top:22px;font-size:13px;color:var(--ink-faint)}
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
+</style>
+</head>
+<body>
+  <main class="card">
+    <svg class="rose" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+      <circle cx="60" cy="60" r="54"/><circle cx="60" cy="60" r="40" stroke-dasharray="3 4"/>
+      <path d="M60 6l6 22h-12zM60 114l-6-22h12zM6 60l22-6v12zM114 60l-22 6v-12z" fill="currentColor" fill-opacity=".25"/>
+      <path d="M60 6v108M6 60h108" stroke-opacity=".35"/>
+      <path d="M60 20l5.4 34.6L100 60l-34.6 5.4L60 100l-5.4-34.6L20 60l34.6-5.4z" fill="currentColor" fill-opacity=".10" stroke="currentColor"/>
+      <circle cx="60" cy="60" r="5" fill="currentColor" stroke="none"/>
+    </svg>
+    <p class="code">Error 404</p>
+    <h1>Lost in the Mire</h1>
+    <p>This page has slipped beneath the water. The path back to Aethelgard is still open — two free browser games in one world.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="/aethelgard-games/">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+        Return home
+      </a>
+      <a class="btn btn-ghost" href="/aethelgard-games/play/">Play both games</a>
+    </div>
+    <p class="fine">Aethelgard — built by Dr. Sohil Momin.</p>
+  </main>
+</body>
+</html>

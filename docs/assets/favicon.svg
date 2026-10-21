@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Aethelgard compass rose">
+  <rect width="64" height="64" rx="8" fill="#f3e9d2"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="7" fill="none" stroke="#b8860b" stroke-width="2"/>
+  <g transform="translate(32 32)" fill="none" stroke="#6b1f2a" stroke-width="1.6">
+    <circle r="21"/>
+    <circle r="14" stroke="#b8860b" stroke-dasharray="2 3"/>
+    <path d="M0-21v42M-21 0h42" stroke-opacity=".4"/>
+    <path d="M0-19 3.6-3.6 19 0 3.6 3.6 0 19-3.6 3.6-19 0-3.6-3.6z" fill="#b8860b" fill-opacity=".25" stroke="#b8860b"/>
+    <circle r="2.6" fill="#6b1f2a" stroke="none"/>
+  </g>
+</svg>
