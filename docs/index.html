@@ -183,6 +183,8 @@ h1,h2,h3,.display{font-family:var(--display);font-weight:600;letter-spacing:.005
   .nav-links a{padding:11px 8px;border-bottom:1px solid var(--rule-soft)}
   .btn-play{text-align:center;margin-top:8px}
   .nav-toggle{display:block}
+  .hero .kicker{letter-spacing:.2em;font-size:11px}
+  .hero .hero-sub{letter-spacing:.03em}
 }
 
 /* ── hero ──────────────────────────────────────────────────── */
@@ -196,6 +198,7 @@ h1,h2,h3,.display{font-family:var(--display);font-weight:600;letter-spacing:.005
   letter-spacing:.02em;text-shadow:0 1px 0 rgba(255,255,255,.5),0 2px 0 rgba(184,134,11,.14)
 }
 .hero h1 .amp{color:var(--gold);font-style:italic}
+.hero .hero-sub{font-family:var(--display);font-size:clamp(19px,3.4vw,30px);letter-spacing:.06em;color:var(--burgundy);margin:14px 0 0}
 .hero .lede{max-width:660px;margin:22px auto 0;color:var(--ink-soft);font-size:clamp(16px,2.3vw,19px)}
 .hero .byline{margin-top:16px;font-family:var(--display);letter-spacing:.14em;text-transform:uppercase;font-size:12.5px;color:var(--ink-faint)}
 .hero-heraldry{display:flex;justify-content:center;align-items:flex-end;gap:clamp(14px,4vw,44px);margin:8px auto 22px;color:var(--gold)}
@@ -302,7 +305,8 @@ section{padding:clamp(46px,6.5vw,82px) 0}
 .code{
   font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
   font-size:13px;line-height:1.7;color:#f3e9d2;background:var(--burgundy-deep);
-  border:1px solid var(--burgundy);border-radius:4px;padding:15px 16px;overflow-x:auto;margin:12px 0 4px
+  border:1px solid var(--burgundy);border-radius:4px;padding:15px 16px;overflow-x:auto;margin:12px 0 4px;
+  white-space:pre;tab-size:2
 }
 .code .c{color:var(--gold-pale);opacity:.75}
 
@@ -335,15 +339,32 @@ footer .flinks a:hover{color:var(--burgundy-deep)}
 footer .built{font-family:var(--display);letter-spacing:.1em;text-transform:uppercase;font-size:13px;color:var(--burgundy)}
 footer .fine{font-size:13px;color:var(--ink-faint);margin-top:12px;line-height:1.7}
 
-/* ── reveal animation (respects reduced motion) ────────────── */
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
+/* ── reveal animation ──────────────────────────────────────────
+   Content is visible by default. The hidden starting state applies
+   only when JS has run (html.js) and motion is allowed, and a
+   failsafe reveals everything even if the observer never fires. */
+.reveal{opacity:1;transform:none}
+html.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+html.js .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
-  .reveal{opacity:1;transform:none}
+  html.js .reveal{opacity:1;transform:none}
 }
 </style>
+<script>
+/* Progressive enhancement: mark that JS is available, and guarantee that the
+   reveal-animated content becomes visible even if IntersectionObserver never
+   fires. Without this script the page renders fully with no animation. */
+(function(){
+  var root = document.documentElement;
+  root.classList.add("js");
+  window.setTimeout(function(){
+    var els = document.querySelectorAll(".reveal");
+    for (var i = 0; i < els.length; i++){ els[i].classList.add("in"); }
+  }, 1500);
+})();
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -405,7 +426,8 @@ footer .fine{font-size:13px;color:var(--ink-faint);margin-top:12px;line-height:1
   </div>
 
   <p class="kicker">Two games · one world · free to play</p>
-  <h1>Aethelgard <span class="amp">&amp;</span> the <span class="amp">Mire</span></h1>
+  <h1>Aethelgard</h1>
+  <p class="hero-sub">The Books <span class="amp">&amp;</span> Chronicles of Fate</p>
   <p class="lede">A visual novel in three books, and a deep fantasy role-playing game — built with nothing but HTML, CSS and JavaScript. No install, no account, no build step. Just open and play.</p>
   <p class="byline">By Dr. Sohil Momin</p>
 
