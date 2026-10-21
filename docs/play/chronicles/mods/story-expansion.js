@@ -1,0 +1,215 @@
+
+window.AETHELGARD_MODS = window.AETHELGARD_MODS || [];
+
+window.AETHELGARD_MODS.push({
+  id: "story-expansion",
+  mode: "chronicles",
+  name: "The Hollow Crown (expansion)",
+  version: "1.0.0",
+  author: "Dr. Sohil Momin",
+  description: "Three new chapters continuing the campaign, two regions and a side chain. Picks up from your current save. Needs a restart.",
+  impact: "story",
+  provides: ["story:hollow-crown"],
+
+  SPRITES: {
+    "enemy.frost_revenant": "mods/story-expansion/sprites/enemy_frost_revenant.webp",
+    "enemy.hollow_knight":  "mods/story-expansion/sprites/enemy_hollow_knight.webp",
+    "enemy.choir_wretch":   "mods/story-expansion/sprites/enemy_choir_wretch.webp",
+
+    "bg.hollowmere":        "mods/story-expansion/sprites/bg_hollowmere.webp",
+    "bg.drownedchoir":      "mods/story-expansion/sprites/bg_drownedchoir.webp",
+    "loc.hollowmere":       "mods/story-expansion/sprites/loc_hollowmere.webp",
+    "loc.drownedchoir":     "mods/story-expansion/sprites/loc_drownedchoir.webp",
+
+    "poi.hollowmere.hm_ice":    "mods/story-expansion/sprites/poi_hollowmere_hm_ice.webp",
+    "poi.hollowmere.hm_crown":  "mods/story-expansion/sprites/poi_hollowmere_hm_crown.webp",
+    "poi.hollowmere.hm_fish":   "mods/story-expansion/sprites/poi_hollowmere_hm_fish.webp",
+    "poi.hollowmere.hm_herbs":  "mods/story-expansion/sprites/poi_hollowmere_hm_herbs.webp",
+    "poi.hollowmere.hm_camp":   "mods/story-expansion/sprites/poi_hollowmere_hm_camp.webp",
+
+    "poi.drownedchoir.dc_choir":  "mods/story-expansion/sprites/poi_drownedchoir_dc_choir.webp",
+    "poi.drownedchoir.dc_nest":   "mods/story-expansion/sprites/poi_drownedchoir_dc_nest.webp",
+    "poi.drownedchoir.dc_statue": "mods/story-expansion/sprites/poi_drownedchoir_dc_statue.webp",
+    "poi.drownedchoir.dc_altar":  "mods/story-expansion/sprites/poi_drownedchoir_dc_altar.webp",
+    "poi.drownedchoir.dc_stairs": "mods/story-expansion/sprites/poi_drownedchoir_dc_stairs.webp",
+},
+
+  LOCATIONS: {
+    hollowmere: {
+      name: "Hollowmere", emoji: "🏔️", danger: 4,
+      desc: "A frozen lake under a broken crown of stone. Something old is buried beneath the ice, and it has been waiting.",
+      unlock: { chapter: 7 },
+},
+    drownedchoir: {
+      name: "The Drowned Choir", emoji: "🌊", danger: 5,
+      desc: "Flooded vaults beneath Hollowmere. The dead here do not rest — they sing.",
+      unlock: { chapter: 8 },
+},
+},
+  WORLD_POS: {
+    hollowmere: { x: 88, y: 26 },
+    drownedchoir: { x: 90, y: 62 },
+},
+  WORLD_LINKS: [["mountains", "hollowmere"], ["hollowmere", "drownedchoir"], ["ruins", "drownedchoir"]],
+
+  LOCAL_MAPS: {
+    hollowmere: [
+      { id: "hm_ice", name: "The Frozen Shore", emoji: "🧊", x: 24, y: 70, act: "hunt", spawn: ["frost_revenant"], desc: "Revenants walk the shoreline where the ice broke." },
+      { id: "hm_crown", name: "The Crown Stones", emoji: "👑", x: 52, y: 30, act: "hunt", spawn: ["hollow_knight"], boss: true, desc: "Broken pillars around an empty throne. Something kneels here." },
+      { id: "hm_fish", name: "Ice Holes", emoji: "🐟", x: 76, y: 62, act: "fish", desc: "Cut holes in the ice — the fish below are blind and slow." },
+      { id: "hm_herbs", name: "Frostmoss Bank", emoji: "🌿", x: 38, y: 46, act: "forage", desc: "A moss that only grows where the dead have walked." },
+      { id: "hm_camp", name: "Shelter", emoji: "⛺", x: 62, y: 82, act: "retreat", desc: "A windbreak of stacked stone. Rest here." },
+],
+    drownedchoir: [
+      { id: "dc_choir", name: "The Choir Vault", emoji: "🎵", x: 50, y: 40, act: "hunt", spawn: ["choir_wretch"], desc: "The singing is loudest here. It knows you are listening." },
+      { id: "dc_nest", name: "Spider Nest", emoji: "🕸️", x: 22, y: 68, act: "hunt", spawn: ["spider_queen"], boss: true, desc: "The Queen made her nest in a drowned chapel." },
+      { id: "dc_statue", name: "The Drowned Statue", emoji: "🗿", x: 78, y: 60, act: "prospect", desc: "A saint's statue, half sunk. Something is buried at its feet." },
+      { id: "dc_altar", name: "Drowned Altar", emoji: "🕯️", x: 66, y: 24, act: "pray", desc: "Someone still lights these candles. Nobody admits to it." },
+      { id: "dc_stairs", name: "The Deep Stair", emoji: "🪜", x: 40, y: 84, act: "endless", desc: "Stairs going down further than the vaults should allow." },
+],
+},
+
+  ENEMIES: {
+    frost_revenant: {
+      name: "Frost Revenant", emoji: "🥶", hp: 220, atk: 34, def: 10, xp: 260, gold: 130,
+      tier: 4, element: "ice", weak: ["fire"], resists: ["ice"],
+      drops: { relic: 0.3, ruby: 0.4 },
+      abilities: [
+        { name: "Hoarfrost Grasp", chance: 0.3, kind: "dot", status: "stun", mult: 0.8, msg: "closes a frozen hand around you" },
+        { name: "Grave Cold", chance: 0.2, kind: "heavy", mult: 1.6, telegraph: "gathers the cold", msg: "unleashes the grave's chill" },
+],
+},
+    hollow_knight: {
+      name: "Hollow Knight", emoji: "🛡️", hp: 300, atk: 40, def: 18, xp: 320, gold: 170,
+      tier: 4, element: "physical", weak: ["ice"], resists: ["physical"],
+      drops: { iron: 2, relic: 0.35 },
+      abilities: [
+        { name: "Crown Sunder", chance: 0.25, kind: "heavy", mult: 1.7, telegraph: "raises a cracked blade", msg: "sunders your guard" },
+        { name: "Oath of Silence", chance: 0.2, kind: "weaken", mult: 0.35, msg: "speaks a vow that dulls your arm" },
+],
+},
+    choir_wretch: {
+      name: "Choir Wretch", emoji: "🎵", hp: 180, atk: 28, def: 8, xp: 200, gold: 95,
+      tier: 4, element: "dark", weak: ["fire"], resists: ["dark", "poison"],
+      drops: { herb: 1, relic: 0.25 },
+      abilities: [
+        { name: "Drowning Hymn", chance: 0.3, kind: "dot", status: "poison", mult: 0.7, msg: "sings the water into your lungs" },
+        { name: "Discord", chance: 0.22, kind: "stun", mult: 0.4, msg: "strikes a note that stops your heart a beat" },
+],
+},
+},
+
+  CHAPTERS: [
+    {
+      id: 7, title: "Chapter VII — The Hollow Crown",
+      text: "The Coven is broken and the Iron Warden rusts in the dark. But a sealed letter found on the Warlord's body names a place the old maps forgot: Hollowmere. Beneath its ice something is still awake — and it has been waiting for someone strong enough to wear the crown.",
+      objective: { type: "kill", target: "frost_revenant", required: 2, label: "Put down the two Frost Revenants that guard the ice" },
+      rewards: { gold: 700, xp: 900, items: { relic: 1 } },
+      unlocks: ["Hollowmere on the world map", "The Hollow Crown side chain"],
+      prepare: [
+        "Hollowmere is dangerous — go in above level 20",
+        "Frost Revenants resist Ice and shrug off Physical: bring Fire",
+        "Carry 3+ potions; their grasp freezes you in place",
+        "Shield Wall or Rune Ward before each one",
+],
+      choices: [
+        { label: "Melt the ice and take the crown",
+          outcome: "The crown is yours, and it is cold. Hollowmere's water runs black — but Oakhaven will sing your name for a generation.",
+          effects: { flags: { hollow: "take" }, rep: { oakhaven: 20 }, gold: 300, xp: 150, unlockSide: ["sq_hollow_1"] } },
+        { label: "Leave it buried and seal the lake",
+          outcome: "You break the ice and let it freeze over again. Nobody will ever know what you refused — and what you refused to become.",
+          effects: { flags: { hollow: "seal" }, rep: { coven: -15 }, xp: 250, unlockSide: ["sq_hollow_1"] } },
+],
+},
+    {
+      id: 8, title: "Chapter VIII — The Drowned Choir",
+      text: "Whatever wore the crown was not the thing under the lake. The ice cracks from below, and the water drains into vaults no living map remembers. Down there the dead have been singing for a very long time, and they have learned your name.",
+      objective: { type: "kill", target: "choir_wretch", required: 4, label: "Silence four Choir Wretches in the flooded vaults" },
+      rewards: { gold: 1000, xp: 1400, items: { artifact: 3 } },
+      unlocks: ["The Drowned Choir on the world map"],
+      prepare: [
+        "The Wretches resist Dark and Poison — Fire and Ice both bite",
+        "Their hymn poisons; bring Antidotes, not just potions",
+        "Fight them one at a time — two at once is a death sentence",
+        "Fill your Limit Break before you descend",
+],
+      choices: [
+        { label: "Listen to the choir before you strike",
+          outcome: "You hear the names of everyone you have killed, sung back at you in order. You will not sleep well again — but you understand what is down here, and it is afraid of you.",
+          effects: { flags: { choir: "listen" }, xp: 400, rep: { coven: 10 } } },
+        { label: "Burn the vaults without listening",
+          outcome: "You set the water alight and the singing stops mid-note. Whatever it was trying to tell you is gone now, and so is your chance to know.",
+          effects: { flags: { choir: "burn" }, rep: { oakhaven: 12 }, gold: 400 } },
+],
+},
+    {
+      id: 9, title: "Chapter IX — The Last Dawn",
+      text: "The Hollow Knight was the last thing that ever tried to hold this place shut, and it has been failing for three hundred years. It comes up the stairs to meet you with a cracked blade and no oath left to keep. End it — one way or the other.",
+      objective: { type: "kill", target: "hollow_knight", required: 1, label: "Face the Hollow Knight and end the vigil" },
+      rewards: { gold: 1500, xp: 2200, items: { relic: 2 } },
+      unlocks: ["Ending: The Last Dawn", "Title: Crownbearer"],
+      prepare: [
+        "The Hollow Knight resists Physical — bring Ice or Fire",
+        "It sunders your guard: Defend on the turn it telegraphs",
+        "Its Oath weakens your attacks — burst it down fast",
+        "Full HP, 3 potions, 1 elixir. This is the last fight",
+],
+      choices: [
+        { label: "Take up the crown and keep the vigil yourself",
+          outcome: "You sit down on a throne of frozen stone and the lake closes over you. Aethelgard is safe, and it will never know your name. The last dawn comes without you.",
+          effects: { flags: { ending: "vigil" }, rep: { oakhaven: 40 }, xp: 500 } },
+        { label: "Break the crown and walk away",
+          outcome: "You shatter it on the stairs and the vaults fall silent for the first time in three centuries. Whatever comes next, it will have to come through you — awake, and looking.",
+          effects: { flags: { ending: "break" }, rep: { coven: 25 }, gold: 800, xp: 300 } },
+],
+},
+],
+
+  SIDE_QUESTS: [
+    { id: "sq_hollow_1", type: "side", name: "Frost and Rune",
+      desc: "The ice cracked when you broke it. Hunt 6 Harpies nesting on the cliffs above Hollowmere.",
+      objective: { type: "kill", target: "harpy", required: 6 },
+      rewards: { gold: 260, xp: 300, items: { artifact: 2 } },
+      unlocks: ["Part two of the Hollow Crown chain"], unlock: { chapter: 7 },
+      prepare: ["Harpies hit hard in groups — take them one at a time", "Ice damage staggers them", "Bring energy draughts; this is a long hunt"] },
+    { id: "sq_hollow_2", type: "side", name: "The Drowned Smith",
+      desc: "A forge still glows under the lake. Craft three things at the Forge while the chain is active.",
+      objective: { type: "craft", target: "any", required: 3 },
+      rewards: { gold: 320, xp: 260 },
+      unlocks: ["Part three of the Hollow Crown chain"], unlock: { chapter: 7 },
+      prepare: ["Gather iron and leather first", "Bulk-craft ×5 to finish it in one visit"] },
+    { id: "sq_hollow_3", type: "side", name: "Beneath the Ice",
+      desc: "Something is knocking from the underside of the lake. Descend and find out what.",
+      objective: { type: "explore", target: "all", required: 10 },
+      rewards: { gold: 420, xp: 380, items: { relic: 1 } },
+      unlocks: ["Part four of the Hollow Crown chain"], unlock: { chapter: 8 },
+      prepare: ["Exploration counts every region you have ever entered", "Revisit old regions if you are short"] },
+    { id: "sq_hollow_4", type: "side", name: "Crown of Ash",
+      desc: "Face the Spider Queen in her nest beneath Hollowmere and end the chain.",
+      objective: { type: "kill", target: "spider_queen", required: 1 },
+      rewards: { gold: 800, xp: 900, items: { ruby: 3 } },
+      unlocks: ["Title: Crownbearer"], unlock: { chapter: 8 },
+      prepare: ["Fire is her weakness; Poison is hers to give", "Bring 3+ antidotes", "Use your Limit Break early — the fight is long"] },
+],
+
+  WIKI: {
+    chapter_hollow: { key: "chapter_hollow", title: "The Hollow Crown", cat: "Story",
+      short: "Chapters VII–IX (expansion)",
+      body: "Added by The Hollow Crown expansion. Three chapters that continue the campaign after Chapter V, played before the open world unlocks." },
+    loc_hollowmere: { key: "loc_hollowmere", title: "Hollowmere", cat: "Regions",
+      short: "Frozen lake region",
+      body: "A frozen lake ringed by broken stone. Reached after Chapter VII. Home to Frost Revenants, and to something older under the ice." },
+    loc_drownedchoir: { key: "loc_drownedchoir", title: "The Drowned Choir", cat: "Regions",
+      short: "Flooded vaults",
+      body: "Vaults beneath Hollowmere, flooded and full of the singing dead. Reached after Chapter VIII." },
+    enemy_frost_revenant: { key: "enemy_frost_revenant", title: "Frost Revenant", cat: "Bestiary",
+      short: "Ice · resists Ice",
+      body: "A corpse that kept walking through a hundred winters. Weak to Fire, immune to its own cold." },
+    enemy_hollow_knight: { key: "enemy_hollow_knight", title: "Hollow Knight", cat: "Bestiary",
+      short: "Boss · resists Physical",
+      body: "The last thing that ever tried to hold Hollowmere shut. It has been failing for three hundred years, and it knows it." },
+    enemy_choir_wretch: { key: "enemy_choir_wretch", title: "Choir Wretch", cat: "Bestiary",
+      short: "Dark · resists Dark and Poison",
+      body: "One voice of the drowned choir. Sings water into the lungs of the living." },
+},
+});
