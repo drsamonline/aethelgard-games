@@ -5,10 +5,30 @@
 **Two free browser games in one world — a visual novel and a fantasy RPG.**
 No install, no account, no build step. Just open and play.
 
-[![Play both](https://img.shields.io/badge/▶_PLAY_BOTH-drsamonline.github.io%2Faethelgard--games-8B5CF6?style=for-the-badge&logo=githubpages&logoColor=white)](https://drsamonline.github.io/aethelgard-games/)
+[![Landing page](https://img.shields.io/badge/🏰%20LANDING%20PAGE-drsamonline.github.io-6b1f2a
+[![Live demo](https://img.shields.io/badge/▶%20LIVE%20DEMO-play%20both%20games-b8860b
+[![The Books](https://img.shields.io/badge/📖%20The%20Books-visual%20novel-2dd4bf
+[![Chronicles](https://img.shields.io/badge/⚔️%20Chronicles-RPG-8b5cf6
 
-[![The Books](https://img.shields.io/badge/📖_The_Books-visual_novel-2dd4bf?style=for-the-badge)](https://drsamonline.github.io/aethelgard-games/books/)
-[![Chronicles](https://img.shields.io/badge/⚔️_Chronicles-RPG-8b5cf6?style=for-the-badge)](https://drsamonline.github.io/aethelgard-games/chronicles/)
+**Landing page:** <https://drsamonline.github.io/aethelgard-games/> · **Live demo:** <https://drsamonline.github.io/aethelgard-games/play/>
+
+*Created by [Dr. Sohil Momin](https://github.com/drsamonline).*
+
+</div>
+
+---
+
+<div align="center">
+
+# ⚔️ Aethelgard — Two Games
+
+**Two free browser games in one world — a visual novel and a fantasy RPG.**
+No install, no account, no build step. Just open and play.
+
+[![Play both](https://img.shields.io/badge/▶_PLAY_BOTH-drsamonline.github.io%2Faethelgard--games-8B5CF6
+
+[![The Books](https://img.shields.io/badge/📖_The_Books-visual_novel-2dd4bf
+[![Chronicles](https://img.shields.io/badge/⚔️_Chronicles-RPG-8b5cf6
 
 *Created by [Dr. Sohil Momin](https://github.com/drsamonline).*
 
