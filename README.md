@@ -20,7 +20,6 @@ No install, no account, no build step. Just open and play.
 
 <div align="center">
 
-# ⚔️ Aethelgard — Two Games
 
 **Two free browser games in one world — a visual novel and a fantasy RPG.**
 No install, no account, no build step. Just open and play.
@@ -40,8 +39,8 @@ No install, no account, no build step. Just open and play.
 
 | | Game | What it is | Play |
 |---|---|---|---|
-| 📖 | **Aethelgard — The Books** | A visual novel in three books. A soldier who will not stop, a healer who was left to burn, and the Mire between them. **36 chapters · 7 endings.** Every choice moves four hidden counters; the ending is their *shape*, not a score. | **[▶ Read the story](https://drsamonline.github.io/aethelgard-games/books/)** |
-| ⚔️ | **Aethelgard: Chronicles of Fate** | A deep, single-player fantasy RPG. **8 classes · 8 races · 2 full campaigns** (the hero's *Chronicles* and the villain's *The Crown's Shadow*), crafting, settlement building, an underworld of crime, an endless dungeon, and a wiki you can hover. Installable as an offline app. | **[▶ Enter the world](https://drsamonline.github.io/aethelgard-games/chronicles/)** |
+| 📖 | **Aethelgard — The Books** | A visual novel in three books. A soldier who will not stop, a healer who was left to burn, and the Mire between them. **36 chapters · 7 endings.** Every choice moves four hidden counters; the ending is their *shape*, not a score. | **[▶ Read the story](https://drsamonline.github.io/aethelgard-games/play/books/)** |
+| ⚔️ | **Aethelgard: Chronicles of Fate** | A deep, single-player fantasy RPG. **8 classes · 8 races · 2 full campaigns** (the hero's *Chronicles* and the villain's *The Crown's Shadow*), crafting, settlement building, an underworld of crime, an endless dungeon, and a wiki you can hover. Installable as an offline app. | **[▶ Enter the world](https://drsamonline.github.io/aethelgard-games/play/chronicles/)** |
 
 Both are plain HTML, CSS and JavaScript — no server, no framework, no dependencies. They work offline once loaded.
 
