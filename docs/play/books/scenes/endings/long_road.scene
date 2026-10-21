@@ -1,0 +1,19 @@
+# an ending
+@title The Long Road
+@bg field
+@mood grief
+
+narrate It worked. That is the first thing, and it must not be buried: it worked. Forty thousand people lived who would not have.
+narrate And Corin paid for it alone.
+narrate He kept the bones of it — that he had been a soldier, that he had got up in a square at Sallow's Rest. He kept Bryn's face, which was a mercy, because Bryn was still there to sit next to.
+narrate He lost the rest. All of it.
+narrate And on the last night of the eleventh year, Bryn sat on the bench next to him and said: "Do you want to hear about the bread?"
+corin neutral "Yes."
+narrate And Bryn told him. The road, and the column, and the boy at the side of it, and the half a loaf, and the words.
+bryn grieving "That's the whole of it. That's all I have."
+narrate And Corin — who had no memory of the bread and never would — sat on a bench in a garden in the Mire and cried like a man hearing about his own life.
+corin grieving "That's the most anyone's ever done."
+bryn neutral "It's half a loaf."
+corin grieving "It's the most anyone's ever done."
+
+@ending long_road

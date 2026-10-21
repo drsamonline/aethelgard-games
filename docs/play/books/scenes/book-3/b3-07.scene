@@ -1,0 +1,71 @@
+# converted from 07-the-four-axes.md
+@title The Four Axes
+@bg field
+@mood dread
+
+narrate They came to the field on the fourth day, and the field was full.
+narrate Corin had expected nothing. He had walked four days through a country he could not remember with two men and a dog, and he had expected a hole in the ground and grass, and instead there were four thousand people standing in a fold of ground eleven miles north of a village that no longer existed, waiting for him.
+narrate The Mire had come.
+narrate They had walked for a week, most of them. The Hollow's survivors. The nine he had got out through the reeds, five years older. Marta Osric, straight-backed, with a grandchild. Iven, from the eastern line, with a son who was now twelve. Sera, and Nessa, and the brother who had been nine.
+narrate And behind them, on the ridge, in a professional line, with a folding table and a green baize top, the Order.
+narrate The Warden stood between them.
+narrate That was the whole of his life now — a fifty-five-year-old man standing in the middle of a field with a ledger under his arm, between forty thousand people and the institution he had served for thirty years.
+corin neutral They'll move when you move,
+corin neutral Whatever you do at that hole, they will write it down, and in nine months there will be a policy about it.
+cael neutral Let them.
+corin neutral That is not—
+corin neutral You are twenty-four and you have a condition. Let me do the worrying.
+corin neutral You've done the worrying for five years,
+corin neutral Look at the ledger. You've written down every day of me. When this is over, one of us should get to stop.
+narrate Cael stood at the edge of the hole.
+narrate He had been standing there for an hour. He had not spoken since they arrived and he had not looked at the crowd and he had not looked at the Order on the ridge, and Corin understood — because he had a ledger, and because he had read it back, and because there were eleven entries about things he could no longer feel — that the old man was doing the last piece of arithmetic of his life.
+narrate Bryn stood next to him. On his left, which was where he had stood for five years.
+narrate They did not speak. They had not spoken for seventeen years and they did not speak now, and it was, Corin thought, the most honest friendship he had ever seen.
+narrate And then Cael turned around.
+cael neutral You should know what you are,
+cael neutral All of you. Before I do this. Because in an hour there will be a hole in the world where I used to be, and I would rather it be a truthful hole.
+narrate The field was quiet.
+cael neutral There are four things a person can be,
+cael neutral I've spent seventeen years working it out, and this is the best I have.
+narrate Mercy. Whether you spare, or whether you spend.
+narrate Truth. Whether you tell, or whether you manage.
+narrate Bonds. Whether you lean on people, or whether you stand alone.
+narrate Conviction. Whether you believe in something, or whether you hedge.
+corin neutral And I failed all four,
+corin neutral I spent nothing on mercy, because I was saving myself. I managed instead of telling, for seventeen years. I stood alone, and I called it strength. And I believed in nothing at all, and I called it arithmetic.
+narrate He looked at Corin.
+cael neutral And then a boy got up in a square in Sallow's Rest, and I stood in the trees and watched him, and I understood that I had been wrong about the whole of it — not the arithmetic, the arithmetic is real, but the thing I had built on top of it.
+narrate The wind moved.
+cael neutral So I want you to know,
+cael neutral that whatever happens in the next hour, it is not a man being punished. It is a man being correct. And I have been waiting seventeen years to be correct.
+choice
+* "Mercy. Nobody pays. Not him, not me. We find another way, however long it takes"  => mercy+4, goto:b3_07_a
+* "Truth. Tell them everything. All of it. Every name in the ledger"  => truth+4, goto:b3_07_rejoin
+* "Bonds. Whatever we do, we do it together. All of us. Every person in this field"  => bonds+4, goto:b3_07_rejoin
+* "Conviction. It ends today. Whatever it costs. That's what she would have wanted"  => conviction+4, goto:b3_07_rejoin
+* "None of it. I won't choose. Let it be somebody else's to carry."  => conviction-3, mercy-2, truth-3, bonds-3, flag:hollow, goto:b3_07_rejoin
+end
+
+@label b3_07_a
+narrate He chose mercy.
+narrate Nobody paid. Not the Warden, not Cael, not him.
+narrate It took three more years and a great many people died who did not have to, and he never once thought he had chosen wrong.
+@goto b3_07_rejoin
+
+@label b3_07_rejoin
+
+narrate Corin looked at the four thousand people in the field.
+narrate He looked at the Order on the ridge.
+narrate He looked at an old man with a cracked hand who had spent seventeen years arranging this, and a man with a ledger who had spent five years writing him down, and a man on his left who had spent seventeen years being unable to say a sentence.
+narrate And then he did the only thing he had ever known how to do, which was not arithmetic and never had been:
+narrate He said, out loud, so that the whole field could hear it:
+corin neutral Nobody pays. Not him. Not me. Not any of you.
+narrate There was a silence.
+cael neutral That's not how it works,
+corin neutral No,
+corin neutral But it's how it starts.
+narrate And he held out his marked hand — the circle, the hand inside it, black in the skin, cracked at the edge — and said, to the hole in the field, to the deep place, to the thing that had been taking from him for five years:
+cael neutral You've had eleven things off me and a woman's bread and a friend's name. And here's the last of it: I am not going to ask you for anything. I am going to ask them.
+
+@ach four_axes
+@diary places the field
