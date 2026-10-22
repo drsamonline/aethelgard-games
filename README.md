@@ -21,22 +21,6 @@ No install, no account, no build step. Just open and play.
 
 ---
 
-<div align="center">
-
-
-**Two free browser games in one world — a visual novel and a fantasy RPG.**
-No install, no account, no build step. Just open and play.
-
-[![Play both](https://img.shields.io/badge/▶_PLAY_BOTH-drsamonline.github.io%2Faethelgard--games-8B5CF6)](https://drsamonline.github.io/aethelgard-games/play/)
-
-[![The Books](https://img.shields.io/badge/📖_The_Books-visual_novel-2dd4bf)](https://drsamonline.github.io/aethelgard-games/play/books/)
-[![Chronicles](https://img.shields.io/badge/⚔️_Chronicles-RPG-8b5cf6)](https://drsamonline.github.io/aethelgard-games/play/chronicles/)
-
-
-</div>
-
----
-
 ## ▶️ Play
 
 | | Game | What it is | Play |
