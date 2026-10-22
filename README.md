@@ -12,6 +12,8 @@ No install, no account, no build step. Just open and play.
 
 **Landing page:** <https://drsamonline.github.io/aethelgard-games/> · **Live demo:** <https://drsamonline.github.io/aethelgard-games/play/>
 
+**Download:** [The Books — Windows (.exe)](https://github.com/drsamonline/aethelgard-games/releases/latest/download/aethelgard-games-books-portable.exe) &nbsp;·&nbsp; [The Books — Android (.apk)](https://github.com/drsamonline/aethelgard-games/releases/latest/download/aethelgard-games-books.apk) &nbsp;·&nbsp; [Chronicles — Windows (.exe)](https://github.com/drsamonline/aethelgard-games/releases/latest/download/aethelgard-games-chronicles-portable.exe) &nbsp;·&nbsp; [Chronicles — Android (.apk)](https://github.com/drsamonline/aethelgard-games/releases/latest/download/aethelgard-games-chronicles.apk)
+
 *Created by [Dr. Sohil Momin](https://github.com/drsamonline).*
 
 </div>
