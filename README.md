@@ -5,10 +5,10 @@
 **Two free browser games in one world — a visual novel and a fantasy RPG.**
 No install, no account, no build step. Just open and play.
 
-[![Landing page](https://img.shields.io/badge/🏰%20LANDING%20PAGE-drsamonline.github.io-6b1f2a
-[![Live demo](https://img.shields.io/badge/▶%20LIVE%20DEMO-play%20both%20games-b8860b
-[![The Books](https://img.shields.io/badge/📖%20The%20Books-visual%20novel-2dd4bf
-[![Chronicles](https://img.shields.io/badge/⚔️%20Chronicles-RPG-8b5cf6
+[![Landing page](https://img.shields.io/badge/🏰%20LANDING%20PAGE-drsamonline.github.io-6b1f2a)](https://drsamonline.github.io/aethelgard-games/)
+[![Live demo](https://img.shields.io/badge/▶%20LIVE%20DEMO-play%20both%20games-b8860b)](https://drsamonline.github.io/aethelgard-games/play/)
+[![The Books](https://img.shields.io/badge/📖%20The%20Books-visual%20novel-2dd4bf)](https://drsamonline.github.io/aethelgard-games/play/books/)
+[![Chronicles](https://img.shields.io/badge/⚔️%20Chronicles-RPG-8b5cf6)](https://drsamonline.github.io/aethelgard-games/play/chronicles/)
 
 **Landing page:** <https://drsamonline.github.io/aethelgard-games/> · **Live demo:** <https://drsamonline.github.io/aethelgard-games/play/>
 
@@ -24,10 +24,10 @@ No install, no account, no build step. Just open and play.
 **Two free browser games in one world — a visual novel and a fantasy RPG.**
 No install, no account, no build step. Just open and play.
 
-[![Play both](https://img.shields.io/badge/▶_PLAY_BOTH-drsamonline.github.io%2Faethelgard--games-8B5CF6
+[![Play both](https://img.shields.io/badge/▶_PLAY_BOTH-drsamonline.github.io%2Faethelgard--games-8B5CF6)](https://drsamonline.github.io/aethelgard-games/play/)
 
-[![The Books](https://img.shields.io/badge/📖_The_Books-visual_novel-2dd4bf
-[![Chronicles](https://img.shields.io/badge/⚔️_Chronicles-RPG-8b5cf6
+[![The Books](https://img.shields.io/badge/📖_The_Books-visual_novel-2dd4bf)](https://drsamonline.github.io/aethelgard-games/play/books/)
+[![Chronicles](https://img.shields.io/badge/⚔️_Chronicles-RPG-8b5cf6)](https://drsamonline.github.io/aethelgard-games/play/chronicles/)
 
 
 </div>
