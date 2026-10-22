@@ -6,6 +6,7 @@
 No install, no account, no build step. Just open and play.
 
 [![Landing page](https://img.shields.io/badge/🏰%20LANDING%20PAGE-drsamonline.github.io-6b1f2a)](https://drsamonline.github.io/aethelgard-games/)
+[![All projects](https://img.shields.io/badge/All%20projects-drsamonline.github.io-2dd4bf)](https://drsamonline.github.io/)
 [![Live demo](https://img.shields.io/badge/▶%20LIVE%20DEMO-play%20both%20games-b8860b)](https://drsamonline.github.io/aethelgard-games/play/)
 [![The Books](https://img.shields.io/badge/📖%20The%20Books-visual%20novel-2dd4bf)](https://drsamonline.github.io/aethelgard-games/play/books/)
 [![Chronicles](https://img.shields.io/badge/⚔️%20Chronicles-RPG-8b5cf6)](https://drsamonline.github.io/aethelgard-games/play/chronicles/)
