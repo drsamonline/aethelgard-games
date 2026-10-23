@@ -14,6 +14,7 @@ but not limited to:
 ## What you may do
 
 - **Play the game.** It is free to play, and free to share a link to it.
+- **Make mods** for the game, and share those mods. (A mod may add its own art; it may not redistribute the game's art.)
 - **Look at the art**, and use it as reference for learning.
 
 ## What you may not do

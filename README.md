@@ -73,8 +73,17 @@ python3 -m http.server 8001 --directory chronicles
 
 | what | licence |
 |---|---|
-| Both engines — code and stylesheet | **MIT** |
-| The *Aethelgard* story, characters and artwork | © Dr. Sohil Momin, **all rights reserved** — free to play, not for resale |
+| Both engines — code, stylesheet, tools, mod system | **MIT** — open source; fork it and build your own game |
+| The *Aethelgard* story, characters, scene scripts and artwork | © Dr. Sohil Momin, **all rights reserved** — free to play, free to make and share mods; not for resale |
+
+**Free to play. Free to mod.** Play both games for nothing, and write and share
+your own mods. The story, characters and artwork stay © Dr. Sohil Momin —
+please don't sell them or present them as your own. The engines are open source
+(MIT), and anything you build with them is yours.
+
+The engines live in their own repos:
+[saga-vn-engine](https://github.com/drsamonline/saga-vn-engine) (visual novel) and
+[aethelgard-rpg-engine](https://github.com/drsamonline/aethelgard-rpg-engine) (RPG).
 
 <div align="center">
 
