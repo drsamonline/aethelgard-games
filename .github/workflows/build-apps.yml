@@ -42,6 +42,7 @@ jobs:
           - name: aethelgard-games-chronicles
             src: docs/play/chronicles
     uses: drsamonline/app-builder/.github/workflows/build.yml@main
+    timeout-minutes: 30
     with:
       app_name: ${{ matrix.name }}
       app_src: ${{ matrix.src }}
@@ -56,6 +57,7 @@ jobs:
     name: Deploy the demo
     if: github.event_name != 'pull_request'
     uses: drsamonline/app-builder/.github/workflows/pages.yml@main
+    timeout-minutes: 30
     with:
       path: docs
     permissions:
