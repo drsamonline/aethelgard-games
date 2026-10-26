@@ -27,7 +27,7 @@ but not limited to:
 
 ## Making your own game with this engine
 
-You are welcome to. The engine is MIT licensed. But you must supply **your own
+You are welcome to. The engine is PolyForm Noncommercial licensed. But you must supply **your own
 art** — this repository's artwork is not part of the open-source grant. Delete
 the art folders, drop in your own, and ship.
 
