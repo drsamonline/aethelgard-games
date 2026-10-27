@@ -14,6 +14,7 @@ but not limited to:
 ## What you may do
 
 - **Play the game.** It is free to play, and free to share a link to it.
+- **Make mods** for the game, and share those mods. (A mod may add its own art; it may not redistribute the game's art.)
 - **Look at the art**, and use it as reference for learning.
 
 ## What you may not do
@@ -26,7 +27,7 @@ but not limited to:
 
 ## Making your own game with this engine
 
-You are welcome to. The engine is MIT licensed. But you must supply **your own
+You are welcome to. The engine is PolyForm Noncommercial licensed. But you must supply **your own
 art** — this repository's artwork is not part of the open-source grant. Delete
 the art folders, drop in your own, and ship.
 
