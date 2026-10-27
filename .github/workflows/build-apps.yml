@@ -41,7 +41,7 @@ jobs:
             src: docs/play/books
           - name: aethelgard-games-chronicles
             src: docs/play/chronicles
-    uses: drsamonline/app-builder/.github/workflows/build.yml@main
+    uses: drsamonline/app-builder/.github/workflows/build.yml@34fa725eac5ea93ea276c2db375a4f1004123a62   # was @main
     with:
       app_name: ${{ matrix.name }}
       app_src: ${{ matrix.src }}
@@ -55,7 +55,7 @@ jobs:
   pages:
     name: Deploy the demo
     if: github.event_name != 'pull_request'
-    uses: drsamonline/app-builder/.github/workflows/pages.yml@main
+    uses: drsamonline/app-builder/.github/workflows/pages.yml@34fa725eac5ea93ea276c2db375a4f1004123a62   # was @main
     with:
       path: docs
     permissions:
