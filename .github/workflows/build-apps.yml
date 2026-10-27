@@ -1,7 +1,7 @@
 # Multi-app repo: one matrix entry per app. Build + release + deploy, one push.
 #
 # SPDX-FileCopyrightText: 2026 Dr Sohil Momin
-# SPDX-License-Identifier: LicenseRef-Forge-Proprietary
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 #
 # FIXED, and it had three bugs:
 #   1. it carried the drifted inline copy, including `if: always()` on the release
