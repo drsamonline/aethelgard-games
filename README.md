@@ -2,6 +2,8 @@
 
 # ⚔️ Aethelgard — Two Games
 
+[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-2e7d32)](LICENSE)
+
 **Two free browser games in one world — a visual novel and a fantasy RPG.**
 No install, no account, no build step. Just open and play.
 
