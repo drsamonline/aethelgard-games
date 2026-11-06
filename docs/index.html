@@ -352,6 +352,36 @@ html.js .reveal.in{opacity:1;transform:none}
   *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
   html.js .reveal{opacity:1;transform:none}
 }
+
+
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --parchment:#1a1512; --parchment-2:#221a15; --parchment-3:#2a201a;
+    --burgundy:#c9697a; --burgundy-deep:#e08a99;
+    --gold:#d9a441; --gold-soft:#e0b95f; --gold-pale:#f0d79a;
+    --ink:#f0e6d2; --ink-soft:#cbbda3; --ink-faint:#9c8f78;
+    --rule:rgba(217,164,65,.45); --rule-soft:rgba(217,164,65,.22);
+    --shadow:rgba(0,0,0,.5);
+  }
+  :root[data-theme="dark"] body{background-image:none}
+  /* the sticky nav is a literal parchment gradient */
+  :root[data-theme="dark"] .nav{
+    background:linear-gradient(180deg,rgba(26,21,18,.97),rgba(34,26,21,.94));
+  }
+
+  /* ---- theme control ----------------------------------------------------
+     Fixed, because these pages are six different layouts and a chip that has to be
+     placed by hand in each header is six more chances to break a header. .ghost is
+     mandatory: web-kit ships button:not(.ghost):not(.tab){background:var(--acc)
+     !important}, which repaints any bare <button> in the accent colour. */
+  .theme-btn{
+    position:fixed;top:14px;right:14px;z-index:200;display:inline-flex;align-items:center;gap:6px;
+    background:var(--theme-chip-bg,var(--card,#fff));color:var(--theme-chip-fg,inherit);
+    border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:inherit;font-size:12px;
+    line-height:1;cursor:pointer;opacity:.9;backdrop-filter:blur(6px);
+  }
+  .theme-btn:hover{opacity:1}
+  .theme-btn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
 </style>
 <script>
 /* Progressive enhancement: mark that JS is available, and guarantee that the
@@ -372,8 +402,24 @@ html.js .reveal.in{opacity:1;transform:none}
 .getstart>*,.demo-grid>*,.cards>*,.steps>*{min-width:0}
 .getstart p,.getstart li{overflow-wrap:anywhere}
 </style>
+<script>
+/* THEME BEFORE FIRST PAINT: a page that paints one theme and flips to the other is a
+   flash, and a stored choice applied after load is a bug the reader can see. */
+(function () {
+  try {
+    var s = localStorage.getItem("theme");
+    var d = s ? s === "dark" : matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute("data-theme", d ? "dark" : "light");
+  } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+})();
+</script>
 </head>
 <body>
+<button class="theme-btn ghost" id="themeBtn" type="button" aria-label="Switch theme">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  <span id="themeLabel">Theme</span>
+</button>
+
 <a class="skip" href="#main">Skip to content</a>
 
 <!-- ══════════ NAV ══════════ -->
@@ -966,6 +1012,24 @@ python3 -m http.server 8001 --directory chronicles
   /* ── current year in footer, if a slot exists ── */
   var y = document.getElementById("year");
   if (y){ y.textContent = String(new Date().getFullYear()); }
+})();
+</script>
+<script>
+(function () {
+  var b = document.getElementById("themeBtn"), l = document.getElementById("themeLabel");
+  if (!b) return;
+  function sync() {
+    var dark = document.documentElement.getAttribute("data-theme") === "dark";
+    l.textContent = dark ? "Light" : "Dark";
+    b.setAttribute("aria-pressed", String(dark));
+  }
+  b.addEventListener("click", function () {
+    var next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    sync();
+  });
+  sync();
 })();
 </script>
 </body>
