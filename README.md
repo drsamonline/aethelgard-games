@@ -24,7 +24,9 @@ No install, no account, no build step. Just open and play.
 ---
 
 <!-- shot:start -->
-<img src="docs/assets/app-desktop.png" alt="The app on its main screen" width="100%">
+
+![Screenshot](docs/shot.png)
+
 <!-- shot:end -->
 
 ## ▶️ Play
