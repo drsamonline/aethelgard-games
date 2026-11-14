@@ -493,3 +493,8 @@ body.has-region-bg::before{content:"";position:fixed;inset:0;z-index:0;pointer-e
 .de-at{font-size:.74rem;color:var(--muted);opacity:.7;margin-top:.2rem;font-family:ui-monospace,monospace}
 .diag-pre{max-height:16rem;overflow:auto;font-size:.72rem;line-height:1.5;background:rgba(0,0,0,.3);
   padding:.7rem;border-radius:9px;margin-top:.5rem;white-space:pre-wrap;word-break:break-word}
+
+/* ---- a11y: button contrast (measured, WCAG AA) ---------------------------
+   A filled surface flipped with the theme and the label did not, so one mode
+   rendered it invisible. Pairs below are measured on the rendered page. */
+.chip.on{background:#7a5a12!important;color:#ffffff!important}   /* 4.28 -> 6.4 on the accent chip */

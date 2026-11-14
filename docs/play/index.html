@@ -481,6 +481,15 @@ window.addEventListener("error", function () { window.__bootError = true; });
   input,textarea,select{border-radius:4px !important}
   .card,[class*="card"]{border-radius:8px !important}
   button:not(.ghost):not(.tab){background:var(--acc) !important}
+
+/* ---- a11y: button contrast (measured, WCAG AA) ---------------------------
+   A filled surface flipped with the theme and the label did not, so one mode
+   rendered it invisible. Pairs below are measured on the rendered page. */
+button.support-open,.support button{color:#ffffff!important}                        /* 2.34/3.02 -> 7.6 on #6630c2 */
+[data-theme="dark"] button.support-open,[data-theme="dark"] .support button{color:#1a1030!important} /* 1.36/3.07 -> 5.3 on #a171f2 */
+
+#save-data{color:#ffffff!important}                              /* 3.02 -> 7.6 on #6630c2 */
+[data-theme="dark"] #save-data{color:#1a1030!important}          /* 1.36 -> 5.3 on #a171f2 */
 </style>
 </body>
 </html>
