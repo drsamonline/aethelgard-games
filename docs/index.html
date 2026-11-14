@@ -880,6 +880,15 @@ python3 -m http.server 8001 --directory chronicles
   .support-foot{margin:1.2rem 0 0;font-size:.8rem;color:var(--s-muted)}
   @media (prefers-reduced-motion:no-preference){.support-card{transition:border-color .15s ease}}
   .support-card:target,.support-card:focus-within{border-color:var(--s-accent)}
+
+/* ---- a11y: button contrast (measured, WCAG AA) ----------------------------
+   A button paired a surface token that flips with the theme with a text colour
+   that does not, so one mode rendered the label invisible. Each rule below
+   pins the pair. Ratios are from the rendered page, not from the source. */
+
+.btn-play{color:#fdf4e3!important}                                     /* 1.34 -> 10.4 on #6b1f2a */
+[data-theme="dark"] .btn-play{color:#1f0a0e!important}                 /* 1.96 -> 5.2 on #c9697a */
+[data-theme="dark"] .btn-ghost{background:rgba(253,244,227,.07)!important;color:#fdf4e3!important} /* ghost sits on both the dark body and a light card */
 </style>
 
 <section class="support" id="support" aria-labelledby="support-h" data-support>
